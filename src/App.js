@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import NavTab from './components/NavTab';
+import Layout from './components/layout/layout';
 
 class App extends Component {
 	render() {
 		return (
 			<div>
-				<Header/>
-				<NavTab/>
+				<Layout/>
 			</div>
 		);
 	}

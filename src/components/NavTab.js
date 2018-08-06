@@ -95,6 +95,66 @@ class NavTab extends React.Component {
 					li1: 'Тестовая квалификация моряков в своей области (с использованием тестовой программы CES, разработанной Seagull, Norway);',
 					li2: 'Протестируйте профессиональные знания английского языка (проводимые английским инспектором и компьютерным тестом MARLINS);',
 					li3: 'Проверять подлинность документов каждого моряка (в Министерстве транспорта Украины).',
+					text3: 'Агентство BARK сертифицировано Российским регистром и действует в соответстAccording to Shipowner request we can provide either complete or partial crews.
+					Our data base includes files of Ukrainian seafarers (all ranks) who has already worked on container,
+					bulk carrier, tankers, general cargo, sea-river ships, Ro-Ro vessels; have large experience of work,
+					good knowledge of English, and all the documents necessary (according to the rank) in compliance with
+					STCW 78/95 requirements. All the navigators have certificates of GMDSS operators. Crewmembers are
+					thoroughly selected and prospective applicants carefully screened to verify their experience,
+					competence, fitness and comprehension of English prior to enlistment. We also arrange visas for the
+					seafarers according to the Shipowner request.
+					'Samos Steamship is a ship management company operating a mixed fleet of tankers and bulk carriers. ' +
+					'Samos manages a fleet of 2 million tons of an average age of 7 years. With over 140 years of experience, ' +
+					'Samos Steamship offers reliable sea transport, combining expertise, flexibility and innovation.',
+					'A.M. Nomikos operates a commercial, corporate and ship management service for ship owning ' +
+					'entities.The Company employs about 1,000 personnel worldwide, on land and sea based operations. The Head ' +
+					'Office and central management is located in Athens with commercial activities situated in London.',
+					descriptOffen: 'The OFFEN GROUP has a long and proud history stretching from the foundation of RCPO in 1971 ' +
+					'to the current day where it has grown to become one of the world\'s leading managers of container shipping, ' +
+					'bulk carriers and product tankers. Shown below are some of the key milestones in the development of th'BARK AGENCY - законно зарегистрированная компания с HQ, расположенная в Мариуполе, Украина. ' +
+					'Агентство работает уже более десяти лет.',
+					text1: 'По просьбе судовладельца мы можем предоставить либо полную, либо частичную команду. В нашу базу ' +
+					'данных включены файлы украинских моряков (всех званий), которые уже работали на контейнерах, навалочных ' +
+					'судах, танкерах, генеральных грузовиках, морских речных судах, судах Ro-Ro; имеют большой опыт работы, ' +
+					'хорошее знание английского языка и все необходимые документы (в соответствии с рангами) в соответствии с ' +
+					'требованиями STCW 78/95. Все навигаторы имеют сертификаты операторов GMDSS. Члены экипажа тщательно отобраны, ' +
+					'а потенциальные заявители тщательно проверяются, чтобы проверить их опыт, компетентность, пригодность и ' +
+					'понимание английского языка до призыва на военную службу. Мы также организуем визы для этих фаранов в ' +
+					'соответствии с просьбой судовладельца.',
+					text2: 'В процессе отбора экипажей мы делаем следующее:',
+					li1: 'Тестовая квалификация моряков в своей области (с использованием тестовой программы CES, разработанной Seagull, Norway);',
+					li2: 'Протестируйте профессиональные знания английского языка (проводимые английским инспектором и компьютерным тестом MARLINS);',
+					li3: 'Проверять подлинность документов каждого моряка (в Министерстве транспорта Украины).',
+					text3: 'Агентство BARK сертифицировано Российским регистром и действует в соответстAccording to Shipowner request we can provide either complete or partial crews.
+					Our data base includes files of Ukrainian seafarers (all ranks) who has already worked on container,
+					bulk carrier, tankers, general cargo, sea-river ships, Ro-Ro vessels; have large experience of work,
+					good knowledge of English, and all the documents necessary (according to the rank) in compliance with
+					STCW 78/95 requirements. All the navigators have certificates of GMDSS operators. Crewmembers are
+					thoroughly selected and prospective applicants carefully screened to verify their experience,
+					competence, fitness and comprehension of English prior to enlistment. We also arrange visas for the
+					seafarers according to the Shipowner request.
+					'Samos Steamship is a ship management company operating a mixed fleet of tankers and bulk carriers. ' +
+					'Samos manages a fleet of 2 million tons of an average age of 7 years. With over 140 years of experience, ' +
+					'Samos Steamship offers reliable sea transport, combining expertise, flexibility and innovation.',
+					'A.M. Nomikos operates a commercial, corporate and ship management service for ship owning ' +
+					'entities.The Company employs about 1,000 personnel worldwide, on land and sea based operations. The Head ' +
+					'Office and central management is located in Athens with commercial activities situated in London.',
+					descriptOffen: 'The OFFEN GROUP has a long and proud history stretching from the foundation of RCPO in 1971 ' +
+					'to the current day where it has grown to become one of the world\'s leading managers of container shipping, ' +
+					'bulk carriers and product tankers. Shown below are some of the key milestones in the development of th'BARK AGENCY - законно зарегистрированная компания с HQ, расположенная в Мариуполе, Украина. ' +
+					'Агентство работает уже более десяти лет.',
+					text1: 'По просьбе судовладельца мы можем предоставить либо полную, либо частичную команду. В нашу базу ' +
+					'данных включены файлы украинских моряков (всех званий), которые уже работали на контейнерах, навалочных ' +
+					'судах, танкерах, генеральных грузовиках, морских речных судах, судах Ro-Ro; имеют большой опыт работы, ' +
+					'хорошее знание английского языка и все необходимые документы (в соответствии с рангами) в соответствии с ' +
+					'требованиями STCW 78/95. Все навигаторы имеют сертификаты операторов GMDSS. Члены экипажа тщательно отобраны, ' +
+					'а потенциальные заявители тщательно проверяются, чтобы проверить их опыт, компетентность, пригодность и ' +
+					'понимание английского языка до призыва на военную службу. Мы также организуем визы для этих фаранов в ' +
+					'соответствии с просьбой судовладельца.',
+					text2: 'В процессе отбора экипажей мы делаем следующее:',
+					li1: 'Тестовая квалификация моряков в своей области (с использованием тестовой программы CES, разработанной Seagull, Norway);',
+					li2: 'Протестируйте профессиональные знания английского языка (проводимые английским инспектором и компьютерным тестом MARLINS);',
+					li3: 'Проверять подлинность документов каждого моряка (в Министерстве транспорта Украины).',
 					text3: 'Агентство BARK сертифицировано Российским регистром и действует в соответст
 				</TabContainer>}
 				{value === 1 && <TabContainer>Item Two</TabContainer>}

@@ -2,64 +2,72 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
+import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
-import { globalListItems, seamanListItems, otherListItems } from './ListOfDrawer';
+import { drawerListItems } from './listOfDrawer';
 
-const styles = {
-	list: {
-		width: 250,
+const drawerWidth = 240;
+
+const styles = theme => ({
+	root: {
+		flexGrow: 1,
+		height: 'auto',
+		zIndex: 1,
+		overflow: 'hidden',
+		position: 'relative',
+		display: 'flex',
 	},
-	fullList: {
-		width: 'auto',
+	appBar: {
+		zIndex: theme.zIndex.drawer + 1,
 	},
-};
+	drawerPaper: {
+		position: 'relative',
+		width: drawerWidth,
+	},
+	content: {
+		flexGrow: 1,
+		backgroundColor: theme.palette.background.default,
+		padding: theme.spacing.unit * 3,
+		minWidth: 0,
+	},
+	toolbar: theme.mixins.toolbar,
+});
 
-class TemporaryDrawer extends React.Component {
-	state = {
-		left: true,
-	};
+function ClippedDrawer(props) {
+	const { classes } = props;
 
-	toggleDrawer = (side, open) => () => {
-		this.setState({
-			[side]: open,
-		});
-	};
-
-	render() {
-		const { classes } = this.props;
-
-		const sideList = (
-			<div className={classes.list}>
-				<List>{globalListItems}</List>
+	return (
+		<div className={classes.root}>
+			<AppBar position="absolute" className={classes.appBar}>
+				<Toolbar>
+					<Typography variant="title" color="inherit" noWrap>
+						Clipped drawer
+					</Typography>
+				</Toolbar>
+			</AppBar>
+			<Drawer
+				variant="permanent"
+				classes={{
+					paper: classes.drawerPaper,
+				}}
+			>
+				<div className={classes.toolbar} />
+				<List>{drawerListItems}</List>
 				<Divider />
-				<List>{seamanListItems}</List>
-				<Divider />
-				<List>{otherListItems}</List>
-			</div>
-		);
-
-		return (
-			<div>
-				<Button onClick={this.toggleDrawer('left', true)}>Open Left</Button>
-				<Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
-					<div
-						tabIndex={0}
-						role="button"
-						onClick={this.toggleDrawer('left', false)}
-						onKeyDown={this.toggleDrawer('left', false)}
-					>
-						{sideList}
-					</div>
-				</Drawer>
-			</div>
-		);
-	}
+			</Drawer>
+			<main className={classes.content}>
+				<div className={classes.toolbar} />
+				<Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography>
+			</main>
+		</div>
+	);
 }
 
-TemporaryDrawer.propTypes = {
+ClippedDrawer.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(TemporaryDrawer);
+export default withStyles(styles)(ClippedDrawer);

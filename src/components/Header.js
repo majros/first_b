@@ -7,9 +7,6 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 const styles = {
-	root: {
-		flexGrow: 1,
-	},
 	flex: {
 		flexGrow: 1,
 	},
