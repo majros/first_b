@@ -27,7 +27,7 @@ export const drawerListItems = (
 			<ListItemIcon>
 				<PartnersIcon />
 			</ListItemIcon>
-			<ListItemText primary="PARTNERS" />
+			<ListItemText primary={<FormattedMessage id="partners.title"/>} />
 		</ListItem>
 		<ListItem button >
 			<ListItemIcon>

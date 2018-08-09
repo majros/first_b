@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,7 +20,6 @@ import Partners from "../../pages/partners";
 import Vacancies from "../../pages/vacancies";
 import Application from "../../pages/application";
 import Contacts from "../../pages/contacts";
-import LocaleRoute from '../localeRoute';
 import Footer from "./footer";
 
 class PersistentDrawer extends React.Component {
@@ -82,12 +81,12 @@ class PersistentDrawer extends React.Component {
 					>
 						<div className={classes.drawerHeader} />
 						<Switch>
-							<LocaleRoute exact path={'/company'} component={Company} />
-							<LocaleRoute exact path={'/certification'} component={Certification} />
-							<LocaleRoute exact path={'/partners'} component={Partners} />
-							<LocaleRoute exact path={'/vacancies'} component={Vacancies} />
-							<LocaleRoute exact path={'/application'} component={Application} />
-							<LocaleRoute exact path={'/contacts'} component={Contacts} />
+							<Route exact path={'/company'} component={Company} />
+							<Route exact path={'/certification'} component={Certification} />
+							<Route exact path={'/partners'} component={Partners} />
+							<Route exact path={'/vacancies'} component={Vacancies} />
+							<Route exact path={'/application'} component={Application} />
+							<Route exact path={'/contacts'} component={Contacts} />
 							<Redirect from={'/'} to={'/company'} />
 						</Switch>
 					</main>
