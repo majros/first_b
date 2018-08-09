@@ -8,19 +8,6 @@ import MyFancyComponent from '../components/mapContainer';
 import {FormattedMessage} from 'react-intl';
 
 const styles = theme => ({
-	toolbar: {
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'flex-end',
-		padding: '0 8px',
-		...theme.mixins.toolbar,
-	},
-	content: {
-		flexGrow: 1,
-		backgroundColor: theme.palette.background.default,
-		padding: theme.spacing.unit * 3,
-		height: `calc(100% - 96px)`,
-	},
 	typography: {
 		padding: theme.spacing.unit * 2,
 	},
@@ -33,7 +20,7 @@ class Contacts extends React.Component {
 		return <main>
 			<Paper>
 				<Grid container justify="space-around" alignItems="center">
-					<Grid item>
+					<Grid item xs={4}>
 						<Typography className={classes.typography} variant={'title'}>
 							<p><FormattedMessage id="contact.line1"/></p>
 							<p><FormattedMessage id="contact.line2"/></p>
@@ -46,7 +33,7 @@ class Contacts extends React.Component {
 							<p>www: http://bark.com.ua/</p>
 						</Typography>
 					</Grid>
-					<Grid item>
+					<Grid item xs={8}>
 						<MyFancyComponent/>
 					</Grid>
 				</Grid>

@@ -70,7 +70,6 @@ class PersistentDrawer extends React.Component {
 						<Divider />
 						<LocaleDrawer/>
 						<Divider />
-						<div style={{height:'515px'}}/>
 					</Drawer>
 					<main
 						className={classNames(classes.content, classes[`content-left`], {
