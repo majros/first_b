@@ -6,12 +6,10 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import { drawerListItems } from '../listOfDrawer';
 import { styles } from './style'
 import Header from './header'
 import Company from "../../pages/company";
@@ -22,6 +20,7 @@ import Application from "../../pages/application";
 import Contacts from "../../pages/contacts";
 import Footer from "./footer";
 import LocaleRoute from '../localeRoute';
+import LocaleDrawer from './drawer';
 
 class PersistentDrawer extends React.Component {
 	state = {
@@ -69,9 +68,9 @@ class PersistentDrawer extends React.Component {
 							<IconButton onClick={this.handleDrawerClose}>{theme.direction = <ChevronLeftIcon />}</IconButton>
 						</div>
 						<Divider />
-						<List>{drawerListItems}</List>
+						<LocaleDrawer/>
 						<Divider />
-						<div style={{height:'500px'}}/>
+						<div style={{height:'515px'}}/>
 					</Drawer>
 					<main
 						className={classNames(classes.content, classes[`content-left`], {

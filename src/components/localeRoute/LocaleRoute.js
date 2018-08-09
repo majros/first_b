@@ -8,7 +8,7 @@ import {messages} from '../../dictionary/messages'
 
 addLocaleData([...en, ...ru]);
 
-const flattenMessages = (nestedMessages, prefix = '') => {
+export const flattenMessages = (nestedMessages, prefix = '') => {
 	return Object.keys(nestedMessages).reduce((messages, key) => {
 		let value = nestedMessages[key];
 		let prefixedKey = prefix ? `${prefix}.${key}` : key;
