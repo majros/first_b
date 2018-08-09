@@ -1,9 +1,9 @@
-import { CHANGE_LOCALE } from "../actions/types";
+import {CHANGE_LOCALE} from "../actions/types";
 
 const initialLocale = (navigator.languages && navigator.languages[0])
 	|| navigator.language
 	|| navigator.userLanguage
-	|| 'en-US';
+	|| 'ru-RU';
 
 const initState = {
 	currentLanguage: initialLocale

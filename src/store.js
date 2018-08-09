@@ -1,6 +1,6 @@
-import { createStore, applyMiddleware, compose } from 'redux';
-import { routerMiddleware } from 'react-router-redux';
-import { persistReducer } from 'redux-persist';
+import {applyMiddleware, compose, createStore} from 'redux';
+import {routerMiddleware} from 'react-router-redux';
+import {persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/index';

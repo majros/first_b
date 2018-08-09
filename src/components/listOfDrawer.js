@@ -8,40 +8,42 @@ import CertificationIcon from '@material-ui/icons/Assignment';
 import VacanciesIcon from '@material-ui/icons/AccountBox';
 import ApplicationIcon from '@material-ui/icons/Description';
 import ContactIcon from '@material-ui/icons/Info';
+import {Link} from 'react-router-dom';
+import {FormattedMessage} from "react-intl";
 
 export const drawerListItems = (
 	<div>
-		<ListItem button >
+		<ListItem button component={Link} to={'/company'}>
 			<ListItemIcon>
 				<CompanyIcon />
 			</ListItemIcon>
-			<ListItemText primary="ABOUT COMPANY" />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem1"/>}/>
 		</ListItem>
-		<ListItem button >
+		<ListItem button component={Link} to={'/certification'}>
 			<ListItemIcon>
 				<CertificationIcon />
 			</ListItemIcon>
 			<ListItemText primary={<FormattedMessage id="drawerList.textItem2"/>} />
 		</ListItem>
-		<ListItem button >
+		<ListItem button component={Link} to={'/partners'}>
 			<ListItemIcon>
 				<PartnersIcon />
 			</ListItemIcon>
 			<ListItemText primary={<FormattedMessage id="drawerList.textItem3"/>} />
 		</ListItem>
-		<ListItem button >
+		<ListItem button component={Link} to={'/vacancies'}>
 			<ListItemIcon>
 				<VacanciesIcon />
 			</ListItemIcon>
 			<ListItemText primary={<FormattedMessage id="drawerList.textItem4"/>} />
 		</ListItem>
-		<ListItem button >
+		<ListItem button component={Link} to={'/application'}>
 			<ListItemIcon>
 				<ApplicationIcon />
 			</ListItemIcon>
 			<ListItemText primary={<FormattedMessage id="drawerList.textItem5"/>} />
 		</ListItem>
-		<ListItem button >
+		<ListItem button component={Link} to={'/contacts'}>
 			<ListItemIcon>
 				<ContactIcon />
 			</ListItemIcon>
