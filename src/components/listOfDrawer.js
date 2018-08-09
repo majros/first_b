@@ -21,31 +21,31 @@ export const drawerListItems = (
 			<ListItemIcon>
 				<CertificationIcon />
 			</ListItemIcon>
-			<ListItemText primary="CERTIFICATION" />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem2"/>} />
 		</ListItem>
 		<ListItem button >
 			<ListItemIcon>
 				<PartnersIcon />
 			</ListItemIcon>
-			<ListItemText primary={<FormattedMessage id="partners.title"/>} />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem3"/>} />
 		</ListItem>
 		<ListItem button >
 			<ListItemIcon>
 				<VacanciesIcon />
 			</ListItemIcon>
-			<ListItemText primary="VACANCIES" />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem4"/>} />
 		</ListItem>
 		<ListItem button >
 			<ListItemIcon>
 				<ApplicationIcon />
 			</ListItemIcon>
-			<ListItemText primary="APPLICATION" />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem5"/>} />
 		</ListItem>
 		<ListItem button >
 			<ListItemIcon>
 				<ContactIcon />
 			</ListItemIcon>
-			<ListItemText primary="CONTACTS" />
+			<ListItemText primary={<FormattedMessage id="drawerList.textItem6"/>} />
 		</ListItem>
 	</div>
 );
