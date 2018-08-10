@@ -69,4 +69,9 @@ export const styles = theme => ({
 	'contentShift-left': {
 		marginLeft: 0,
 	},
+	fab: {
+		position: 'fixed',
+		bottom: theme.spacing.unit * 7,
+		right: theme.spacing.unit * 2,
+	},
 });

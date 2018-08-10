@@ -1,8 +1,8 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import samosPhoto from './img/samosPhoto.jpg';
-import nomikosPhoto from './img/nomikosPhoto.jpg';
-import offenPhoto from './img/offenPhoto.jpg';
+import samosPhoto from './img/samos_1.jpg';
+import nomikosPhoto from './img/nomikos_1.jpg';
+import offenPhoto from './img/offen_1.jpg';
 
 export const listOfPartners = [
 	{

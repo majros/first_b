@@ -7,6 +7,9 @@ export const messages = {
 			textItem4: 'Vacancies',
 			textItem5: 'Application',
 			textItem6: 'Contacts',
+			textCollaps1: 'Certification',
+			textCollaps2: 'Cadets programm',
+			textCollaps3: 'Medical center',
 		},
 		company: {
 			headline: 'BARK AGENCY is a legitimately registered company with HQ located in Mariupol, Ukraine. ' +
@@ -37,6 +40,22 @@ export const messages = {
 			'to the current day where it has grown to become one of the world\'s leading managers of container shipping, ' +
 			'bulk carriers and product tankers. Shown below are some of the key milestones in the development of the OFFEN GROUP.',
 		},
+		samosCadets:{
+			samosContent1: 'Further to relevant discussions and arrangements regarding subject matter, please be informed ' +
+			'on detailed Cadets’ hiring and promotion schemes:',
+			samosContent2: 'Cadets of Ukrainian Nationality ',
+			samosContent3:'To become eligible for first employment, candidates must provide verification that they are ' +
+			'studying for Bachelor Degree and they are on fourth year course (third year course completed) Prior second ' +
+			'employment following requirements should be met:',
+			samosContentUl1: 'Excellent evaluations from superintendents, Captains or Chief Engineers during first employment',
+			samosContentUl2: 'Evidence of Graduation (submission of Bachelor Diploma / Degree)',
+			samosContentUl3: 'Verification that they enrolled to Higher (Master) Degree course',
+			samosContent4: 'Upon completion of second employment as well as achievement of performance criteria, Cadets will ' +
+			'be promoted to Junior Cadets (a bit older in age) that have been already employed within Samos Steamship Cadets’ ranks and have ' +
+			'been obtained Bachelor degree (+COC) but have not commenced their higher education will be eligible for promotion ' +
+			'to Juniors, upon excellent performances and verification that they enrolled to Higher (Master) degree' +
+			'We are always available to provide clarifications and/or assistance on implementation of am policy scheme',
+		},
 		contact: {
 			line1: '11, Chernomorskaya str., 27 apt.',
 			line2: 'Mariupol, Ukraine, 87517',
@@ -57,6 +76,9 @@ export const messages = {
 			textItem4: 'Вакансии',
 			textItem5: 'Анкета',
 			textItem6: 'Контакты',
+			textCollaps1: 'Кадетсткая программа',
+			textCollaps2: 'Трудоуствройство',
+			textCollaps3: 'Медицинская комиссия',
 		},
 		company: {
 			headline: 'BARK AGENCY - законно зарегистрированная компания с HQ, расположенная в Мариуполе, Украина. ' +
@@ -86,6 +108,21 @@ export const messages = {
 			descriptOffen: 'Группа OFFEN GROUP имеет долгую и гордость историю, которая простирается от основания RCPO в ' +
 			'1971 году до нынешнего дня, когда она превратилась в одного из ведущих мировых менеджеров контейнерных перевозок, ' +
 			'навалочных судов и танкеров товаров. Ниже приводятся некоторые из ключевых этапов развития ОТКРЫТОЙ ГРУППЫ.',
+		},
+		samosCadets:{samosContent1: 'В дополнение к соответствующим обсуждениям и договоренностям в отношении предмета, пожалуйста, ' +
+			'ознакомьтесь с подробными схемами найма и продвижения кадетов:',
+			samosContent2: 'Кадеты украинской национальности',
+			samosContent3:'Чтобы получить право на первую работу, кандидаты должны подтвердить, что они изучают степень бакалавра, ' +
+			'и они находятся на курсе четвертого курса (курс третьего курса завершен)' +
+			'Должно быть выполнено следующее второе занятие по следующим требованиям:',
+			samosContentUl1: 'Отличные оценки от суперинтендантов, капитанов или главных инженеров во время первой работы',
+			samosContentUl2: 'Доказательства окончания (подача диплом бакалавра / степень)',
+			samosContentUl3: 'Верификация, что они зачислены на Высшее (Магистр) Степень',
+			samosContent4: 'После завершения второй работы, а также достижения критериев эффективности, курсанты будут повышены до юниоров' +
+			'Кадеты (немного старше по возрасту), которые уже были заняты в рядах саамских пароходников и получили ' +
+			'степень бакалавра (+ COC), но не начали свое высшее образование, будут иметь право на продвижение на юниоров, ' +
+			'после отличных выступлений и проверки, которые они поступили в Высшую (магистерскую) степень' +
+			'Мы всегда готовы предоставить разъяснения и / или помощь по внедрению схемы политики',
 		},
 		contact: {
 			line1: 'Ул. Черноморская 11, кв. 27',

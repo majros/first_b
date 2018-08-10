@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import {FormattedMessage} from 'react-intl';
+import SingleLineImgList from '../components/lineGridList';
 
 const styles = theme => ({
 	typography: {
@@ -18,6 +19,7 @@ class Company extends React.Component {
 			<Typography className={classes.typography} variant={'headline'}>
 				<FormattedMessage id="company.headline"/>
 			</Typography>
+			<SingleLineImgList/>
 			<Typography className={classes.typography} align={'justify'}>
 				<FormattedMessage id="company.text1"/>
 			</Typography>

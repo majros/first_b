@@ -10,6 +10,8 @@ import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import Button from '@material-ui/core/Button';
+import BtnFabUp from '@material-ui/icons/ArrowUpward';
 import { styles } from './style'
 import Header from './header'
 import Company from "../../pages/company";
@@ -18,6 +20,7 @@ import Partners from "../../pages/partners";
 import Vacancies from "../../pages/vacancies";
 import Application from "../../pages/application";
 import Contacts from "../../pages/contacts";
+import samosCadets from "../../pages/samosCadets";
 import Footer from "./footer";
 import LocaleRoute from '../localeRoute';
 import LocaleDrawer from './drawer';
@@ -85,9 +88,13 @@ class PersistentDrawer extends React.Component {
 							<LocaleRoute exact path={'/vacancies'} component={Vacancies} />
 							<LocaleRoute exact path={'/application'} component={Application} />
 							<LocaleRoute exact path={'/contacts'} component={Contacts} />
+							<LocaleRoute exact path={'/samosCadets'} component={samosCadets} />
 							<Redirect from={'/'} to={'/company'} />
 						</Switch>
 					</main>
+					<Button variant="fab" color="secondary" aria-label="BtnFabUp" className={classes.fab}>
+						<BtnFabUp />
+					</Button>
 				</div>
 				<Footer/>
 			</div>
