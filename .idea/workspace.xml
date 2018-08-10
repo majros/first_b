@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="41786e5d-0daa-4a6d-9233-f6b6d527b1f2" name="Default" comment="" />
-    <list default="true" id="12936739-f0cd-440d-a84e-44088e742e90" name="FrontEnd" comment="drawer с переводом">
+    <list default="true" id="12936739-f0cd-440d-a84e-44088e742e90" name="FrontEnd" comment="drawer с переводом + основная разметка">
+      <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/listOfDrawer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mapContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mapContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +23,32 @@
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="drawer.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/layout/drawer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="63" column="60" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -78,13 +98,14 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/listOfDrawer.js" />
         <option value="$PROJECT_DIR$/src/components/localeRoute/LocaleRoute.js" />
-        <option value="$PROJECT_DIR$/src/components/layout/drawer.js" />
         <option value="$PROJECT_DIR$/src/components/layout/footer.js" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.js" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.js" />
         <option value="$PROJECT_DIR$/src/components/layout/style.js" />
         <option value="$PROJECT_DIR$/src/components/mapContainer.js" />
         <option value="$PROJECT_DIR$/src/pages/contacts.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/components/layout/drawer.js" />
       </list>
     </option>
   </component>
@@ -129,12 +150,6 @@
               <item name="bark" type="b2602c69:ProjectViewProjectNode" />
               <item name="bark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -143,19 +158,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="localeRoute" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bark" type="b2602c69:ProjectViewProjectNode" />
@@ -285,11 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533837685235</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="drawer с переводом + основная разметка">
+      <created>1533842930679</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533842930679</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61800000" />
+    <option name="totallyTimeSpent" value="65172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,14 +311,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4982699" visible="true" weight="0.18044515" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.4982699" visible="true" weight="0.18044515" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32946634" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50158983" side_tool="true" weight="0.22273782" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.25986078" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49841017" visible="true" weight="0.22273782" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" sideWeight="0.49841017" visible="true" weight="0.22273782" />
       <window_info id="npm" order="1" sideWeight="0.5017301" side_tool="true" weight="0.15898252" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.22157772" />
@@ -396,20 +406,11 @@
     <MESSAGE value="test2" />
     <MESSAGE value="полная рабочая верстка барк-2" />
     <MESSAGE value="drawer с переводом" />
-    <option name="LAST_COMMIT_MESSAGE" value="drawer с переводом" />
+    <MESSAGE value="drawer с переводом + основная разметка" />
+    <option name="LAST_COMMIT_MESSAGE" value="drawer с переводом + основная разметка" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/localeRoute/LocaleRoute.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/listOfDrawer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -658,16 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/drawer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/footer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -754,6 +745,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="50" column="39" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="63" column="60" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/drawer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="104" column="75" selection-start-line="104" selection-start-column="75" selection-end-line="104" selection-end-column="75" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
