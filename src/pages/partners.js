@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {listOfPartners} from '../components/listOfPartners';
 import {FormattedMessage} from 'react-intl';
+import {Link} from "react-router-dom";
 
 const styles = theme => ({
 	paper: {
@@ -32,7 +33,7 @@ class Partners extends React.Component {
 						<Paper className={classes.paper}>
 							<img style={{width: '100%'}} alt='icon' src={_listOfPartners.pict}/>
 							<Typography>{_listOfPartners.descript}</Typography>
-							<Button variant="outlined" href={_listOfPartners.site} className={classes.button}>
+							<Button variant="outlined" component={Link} to={_listOfPartners.site} className={classes.button}>
 								{_listOfPartners.company}
 							</Button>
 						</Paper>

@@ -66,6 +66,11 @@ export const styles = theme => ({
 			duration: theme.transitions.duration.enteringScreen,
 		}),
 	},
+	contentPaper: {
+		...theme.mixins.gutters(),
+		paddingTop: theme.spacing.unit * 2,
+		paddingBottom: theme.spacing.unit * 2,
+	},
 	'contentShift-left': {
 		marginLeft: 0,
 	},

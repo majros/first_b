@@ -6,16 +6,16 @@ export const listOfImages = [
 	{
         img: samos1,
         title: 'SHIP_NAME',
-        author: 'SHIP_TYPE',
+        author: 'COMPANY: SHIP_TYPE',
     },
 	{
         img: nokios1,
         title: 'SHIP_NAME',
-        author: 'SHIP_TYPE',
+        author: 'COMPANY: SHIP_TYPE',
     },
 	{
         img: offen1,
         title: 'SHIP_NAME',
-        author: 'SHIP_TYPE',
+        author: 'COMPANY: SHIP_TYPE',
     },
 ];

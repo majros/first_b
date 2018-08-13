@@ -20,7 +20,16 @@ import Partners from "../../pages/partners";
 import Vacancies from "../../pages/vacancies";
 import Application from "../../pages/application";
 import Contacts from "../../pages/contacts";
+import samosInfo from "../../pages/samos";
 import samosCadets from "../../pages/samosCadets";
+import samosCertification from "../../pages/samosCertification";
+import samosMedical from "../../pages/samosMedical";
+import nomikosInfo from "../../pages/nomikos";
+import nomikosCertification from "../../pages/nomikosCertification";
+import nomikosMedical from "../../pages/nomikosMedical";
+import offenInfo from "../../pages/offen";
+import offenCertification from "../../pages/offenCertification";
+import offenMedical from "../../pages/offenMedical";
 import Footer from "./footer";
 import LocaleRoute from '../localeRoute';
 import LocaleDrawer from './drawer';
@@ -28,6 +37,7 @@ import LocaleDrawer from './drawer';
 class PersistentDrawer extends React.Component {
 	state = {
 		open: true,
+		scrolled: 0,
 	};
 
 	handleDrawerOpen = () => {
@@ -35,6 +45,22 @@ class PersistentDrawer extends React.Component {
 	};
 	handleDrawerClose = () => {
 		this.setState({ open: false });
+	};
+	scrollUp = () => {
+		this.scrolled = window.pageYOffset;
+		this.scrollToTop();
+	};
+	scrollToTop = () => {
+		let timer;
+		if (this.scrolled > 2*300) {
+			window.scrollTo(0, this.scrolled);
+			this.scrolled = this.scrolled -300;
+			timer = setTimeout(this.scrollToTop, 50);
+		}
+		else {
+			clearTimeout(timer);
+			window.scrollTo(0,0);
+		}
 	};
 
 	render() {
@@ -88,11 +114,25 @@ class PersistentDrawer extends React.Component {
 							<LocaleRoute exact path={'/vacancies'} component={Vacancies} />
 							<LocaleRoute exact path={'/application'} component={Application} />
 							<LocaleRoute exact path={'/contacts'} component={Contacts} />
+							<LocaleRoute exact path={'/samos'} component={samosInfo} />
 							<LocaleRoute exact path={'/samosCadets'} component={samosCadets} />
+							<LocaleRoute exact path={'/samosCertification'} component={samosCertification} />
+							<LocaleRoute exact path={'/samosMedical'} component={samosMedical} />
+							<LocaleRoute exact path={'/nomikos'} component={nomikosInfo} />
+							<LocaleRoute exact path={'/nomikosCertification'} component={nomikosCertification} />
+							<LocaleRoute exact path={'/nomikosMedical'} component={nomikosMedical} />
+							<LocaleRoute exact path={'/offen'} component={offenInfo} />
+							<LocaleRoute exact path={'/offenCertification'} component={offenCertification} />
+							<LocaleRoute exact path={'/offenMedical'} component={offenMedical} />
 							<Redirect from={'/'} to={'/company'} />
 						</Switch>
 					</main>
-					<Button variant="fab" color="secondary" aria-label="BtnFabUp" className={classes.fab}>
+					<Button
+						onClick={this.scrollUp}
+						variant="fab"
+						color="secondary"
+						aria-label="BtnFabUp"
+						className={classes.fab}>
 						<BtnFabUp />
 					</Button>
 				</div>

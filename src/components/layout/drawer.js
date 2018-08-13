@@ -64,8 +64,8 @@ class LocaleDrawer extends React.Component {
 				</ListItem>
 				<Collapse in={this.state.open} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding dense={true}>
-						<Divider inset />
-						<ListItem button style={{paddingLeft: '40px'}}>
+						<Divider />
+						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/samos'}>
 							<ListItemIcon>
 								<StarBorder />
 							</ListItemIcon>
@@ -75,44 +75,44 @@ class LocaleDrawer extends React.Component {
 								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosCadets'} >
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps1"/>}/>
 								</ListItem>
-								<ListItem button style={{padding: '5px'}} >
+								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosCertification'}>
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
 								</ListItem>
-								<ListItem button style={{padding: '5px'}}>
+								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosMedical'}>
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
 								</ListItem>
 							</List>
 					<Divider inset />
-						<ListItem button style={{paddingLeft: '40px'}}>
+						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/nomikos'}>
 							<ListItemIcon>
 								<StarBorder />
 							</ListItemIcon>
 							<ListItemText inset primary="NOMIKOS" />
 						</ListItem>
 								<List component="div" disablePadding dense={true}>
-									<ListItem button style={{padding: '5px'}}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/nomikosCertification'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
 									</ListItem>
-									<ListItem button style={{padding: '5px'}}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/nomikosMedical'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
 									</ListItem>
 								</List>
 					<Divider inset />
-						<ListItem button style={{paddingLeft: '40px'}}>
+						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/offen'}>
 							<ListItemIcon>
 								<StarBorder />
 							</ListItemIcon>
 							<ListItemText inset primary="OFFEN" />
 						</ListItem>
 								<List component="div" disablePadding dense={true}>
-									<ListItem button style={{padding: '5px'}}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/offenCertification'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
 									</ListItem>
-									<ListItem button style={{padding: '5px'}}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/offenMedical'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
 									</ListItem>
 								</List>
-					<Divider inset />
+					<Divider  />
 					</List>
 				</Collapse>
 				<ListItem button component={Link} to={'/vacancies'}>

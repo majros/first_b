@@ -7,8 +7,8 @@ export const messages = {
 			textItem4: 'Vacancies',
 			textItem5: 'Application',
 			textItem6: 'Contacts',
-			textCollaps1: 'Certification',
-			textCollaps2: 'Cadets programm',
+			textCollaps1: 'Cadets programm',
+			textCollaps2: 'Certification',
 			textCollaps3: 'Medical center',
 		},
 		company: {
@@ -77,7 +77,7 @@ export const messages = {
 			textItem5: 'Анкета',
 			textItem6: 'Контакты',
 			textCollaps1: 'Кадетсткая программа',
-			textCollaps2: 'Трудоуствройство',
+			textCollaps2: 'Трудоустройство',
 			textCollaps3: 'Медицинская комиссия',
 		},
 		company: {

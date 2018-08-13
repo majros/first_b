@@ -2,9 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {withStyles} from '@material-ui/core/styles'
-import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
-import logo from '../img/logo white.gif';
+import logo from '../img/logo white2.gif';
 import LocaleRU from '../img/ru.png';
 import LocaleEN from '../img/en.png';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -13,7 +12,7 @@ import {changeLocale} from "../../actions/locale";
 
 const styles = ({
 	logo: {
-		width: 67,
+		width: 275,
 		height: 41,
 	},
 	header: {
@@ -61,9 +60,6 @@ class Header extends React.PureComponent {
 		return (
 			<div className={classes.header}>
 				<img className={classes.logo} alt='icon' src={logo}/>
-				<Typography color='inherit' variant="display1" noWrap>
-					Bark Agency
-				</Typography>
 				<IconButton
 					aria-owns={open ? 'menu-appbar' : null}
 					aria-haspopup="true"
