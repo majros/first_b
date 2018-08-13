@@ -9,7 +9,7 @@ export const messages = {
 			textItem6: 'Contacts',
 			textCollaps1: 'Cadets programm',
 			textCollaps2: 'Certification',
-			textCollaps3: 'Medical center',
+			textCollaps3: 'Duties & Responsibilities',
 		},
 		company: {
 			headline: 'BARK AGENCY is a legitimately registered company with HQ located in Mariupol, Ukraine. ' +
@@ -30,9 +30,10 @@ export const messages = {
 		},
 		partners: {
 			title: 'Our partners',
-			descriptSamos: 'Samos Steamship is a ship management company operating a mixed fleet of tankers and bulk carriers. ' +
-			'Samos manages a fleet of 2 million tons of an average age of 7 years. With over 140 years of experience, ' +
-			'Samos Steamship offers reliable sea transport, combining expertise, flexibility and innovation.',
+			descriptSamos: 'Samos Steamship Co. is a ship managing company based in P.Faliro, Greece, having long tradition ' +
+			'in sea transportation services. Managed ships are mainly Bulk Carriers, Crude Oil and Product Tankers with ' +
+			'total DWT exceeding 1.5 million tons. Provided the perils of sea, Samos Steamship Co. is fully committed' +
+			' to efficient transport of goods, with highest regard to safety, security and environmental protection.',
 			descriptNomikos: 'A.M. Nomikos operates a commercial, corporate and ship management service for ship owning ' +
 			'entities.The Company employs about 1,000 personnel worldwide, on land and sea based operations. The Head ' +
 			'Office and central management is located in Athens with commercial activities situated in London.',
@@ -78,7 +79,7 @@ export const messages = {
 			textItem6: 'Контакты',
 			textCollaps1: 'Кадетсткая программа',
 			textCollaps2: 'Трудоустройство',
-			textCollaps3: 'Медицинская комиссия',
+			textCollaps3: 'Функции и обязанности',
 		},
 		company: {
 			headline: 'BARK AGENCY - законно зарегистрированная компания с HQ, расположенная в Мариуполе, Украина. ' +
@@ -99,9 +100,10 @@ export const messages = {
 		},
 		partners: {
 			title: 'Наши партнеры',
-			descriptSamos: 'Samos Steamship - компания по управлению судном, управляющая смешанным флотом танкеров и ' +
-			'навалочных судов. Самос управляет флотом в 2 миллиона тонн в среднем возрасте 7 лет. Благодаря более чем ' +
-			'140-летнему опыту, Samos Steamship предлагает надежный морской транспорт, сочетающий в себе опыт, гибкость и инновации.',
+			descriptSamos: 'Samos Steamship Co. - управляющая компания, основанная в г. Фалиро, Греция, имеющая давние ' +
+			'традиции в сфере морских перевозок. Управляемые суда - в основном это Сухогрузы, Нефтяные и Товарные ' +
+			'Танкеры с общим ДВТ, превышающим 1,5 млн. тонн. В случае опасности в море, Samos Steamship Co. полностью ' +
+			'привержена эффективной перевозке грузов, с максимальным учетом безопасности, охраны и защиты окружающей среды.',
 			descriptNomikos: 'Член-корреспондент Nomikos управляет коммерческой, корпоративной и судоремонтной службой для ' +
 			'судовладельцев. В компании работает около 1000 сотрудников по всему миру, на суше и на море. Головной офис' +
 			' и центральное управление расположены в Афинах с коммерческой деятельностью, расположенной в Лондоне.',

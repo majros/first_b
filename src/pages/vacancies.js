@@ -6,6 +6,12 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Typography from '@material-ui/core/Typography';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {listOfVacanciesSamos, listOfVacanciesNomikos, listOfVacanciesOffen} from '../components/listOfVacancies'
 
 const styles = theme => ({
 	root: {
@@ -14,59 +20,128 @@ const styles = theme => ({
 		overflowX: 'auto',
 	},
 	table: {
-		minWidth: 300,
+		minWidth: 250,
 	},
 	typography: {
 		align: 'justify',
 		padding: theme.spacing.unit * 1,
 	},
+	heading: {
+		fontSize: theme.typography.pxToRem(20),
+		fontWeight: theme.typography.fontWeightRegular,
+	},
 });
-
-let id = 0;
-function createData(name, calories, fat, carbs, protein) {
-	id += 1;
-	return { id, name, calories, fat, carbs, protein };
-}
-
-const data = [
-	createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-	createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-	createData('Eclair', 262, 16.0, 24, 6.0),
-	createData('Cupcake', 305, 3.7, 67, 4.3),
-	createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
 
 class Vacancies extends React.Component {
 	render() {
 		const {classes} = this.props;
 
 		return <Paper className={classes.root}>
-			<Table className={classes.table}>
-				<TableHead>
-					<TableRow>
-						<TableCell>Dessert (100g serving)</TableCell>
-						<TableCell numeric>Calories</TableCell>
-						<TableCell numeric>Fat (g)</TableCell>
-						<TableCell numeric>Carbs (g)</TableCell>
-						<TableCell numeric>Protein (g)</TableCell>
-					</TableRow>
-				</TableHead>
-				<TableBody>
-					{data.map(n => {
-						return (
-							<TableRow key={n.id}>
-								<TableCell component="th" scope="row">
-									{n.name}
-								</TableCell>
-								<TableCell numeric>{n.calories}</TableCell>
-								<TableCell numeric>{n.fat}</TableCell>
-								<TableCell numeric>{n.carbs}</TableCell>
-								<TableCell numeric>{n.protein}</TableCell>
+			<ExpansionPanel defaultExpanded={true}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.heading}>SAMOS</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<Table className={classes.table}>
+						<TableHead>
+							<TableRow>
+								<TableCell numeric padding={'checkbox'}>№</TableCell>
+								<TableCell padding={'dense'}>RANK</TableCell>
+								<TableCell padding={'dense'}>VSL Name</TableCell>
+								<TableCell numeric padding={'dense'}>DWT / ME_Type</TableCell>
+								<TableCell numeric padding={'dense'}>Date port</TableCell>
+								<TableCell numeric padding={'dense'}>Monthly wage</TableCell>
 							</TableRow>
-						);
-					})}
-				</TableBody>
-			</Table>
+						</TableHead>
+						<TableBody>
+							{listOfVacanciesSamos.map(n => {
+								return (
+									<TableRow key={n.id}>
+										<TableCell component="th" scope="row" numeric padding={'checkbox'}>
+											{n.id}
+										</TableCell>
+										<TableCell padding={'dense'}>{n.rank}</TableCell>
+										<TableCell padding={'dense'}>{n.VSL_name}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DWT_METype}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DatePort}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.Wage}</TableCell>
+									</TableRow>
+								);
+							})}
+						</TableBody>
+					</Table>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
+			<ExpansionPanel defaultExpanded={true}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.heading}>NOMIKOS</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<Table className={classes.table}>
+						<TableHead>
+							<TableRow>
+								<TableCell numeric padding={'checkbox'}>№</TableCell>
+								<TableCell padding={'dense'}>RANK</TableCell>
+								<TableCell padding={'dense'}>VSL Name</TableCell>
+								<TableCell numeric padding={'dense'}>DWT / ME_Type</TableCell>
+								<TableCell numeric padding={'dense'}>Date port</TableCell>
+								<TableCell numeric padding={'dense'}>Monthly wage</TableCell>
+							</TableRow>
+						</TableHead>
+						<TableBody>
+							{listOfVacanciesNomikos.map(n => {
+								return (
+									<TableRow key={n.id}>
+										<TableCell component="th" scope="row" numeric padding={'checkbox'}>
+											{n.id}
+										</TableCell>
+										<TableCell padding={'dense'}>{n.rank}</TableCell>
+										<TableCell padding={'dense'}>{n.VSL_name}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DWT_METype}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DatePort}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.Wage}</TableCell>
+									</TableRow>
+								);
+							})}
+						</TableBody>
+					</Table>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
+			<ExpansionPanel defaultExpanded={true}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.heading}>OFFEN</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<Table className={classes.table}>
+						<TableHead>
+							<TableRow>
+								<TableCell numeric padding={'checkbox'}>№</TableCell>
+								<TableCell padding={'dense'}>RANK</TableCell>
+								<TableCell padding={'dense'}>VSL Name</TableCell>
+								<TableCell numeric padding={'dense'}>DWT / ME_Type</TableCell>
+								<TableCell numeric padding={'dense'}>Date port</TableCell>
+								<TableCell numeric padding={'dense'}>Monthly wage</TableCell>
+							</TableRow>
+						</TableHead>
+						<TableBody>
+							{listOfVacanciesOffen.map(n => {
+								return (
+									<TableRow key={n.id}>
+										<TableCell component="th" scope="row" numeric padding={'checkbox'}>
+											{n.id}
+										</TableCell>
+										<TableCell padding={'dense'}>{n.rank}</TableCell>
+										<TableCell padding={'dense'}>{n.VSL_name}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DWT_METype}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.DatePort}</TableCell>
+										<TableCell numeric padding={'dense'}>{n.Wage}</TableCell>
+									</TableRow>
+								);
+							})}
+						</TableBody>
+					</Table>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
 		</Paper>;
 	}
 }

@@ -72,13 +72,13 @@ class LocaleDrawer extends React.Component {
 							<ListItemText inset primary="SAMOS" />
 						</ListItem>
 							<List component="div" disablePadding dense={true}>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosCadets'} >
+								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-cadets'} >
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps1"/>}/>
 								</ListItem>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosCertification'}>
+								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-certification'}>
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
 								</ListItem>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samosMedical'}>
+								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-duties-responsibilities'}>
 									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
 								</ListItem>
 							</List>

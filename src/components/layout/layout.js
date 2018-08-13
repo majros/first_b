@@ -23,7 +23,7 @@ import Contacts from "../../pages/contacts";
 import samosInfo from "../../pages/samos";
 import samosCadets from "../../pages/samosCadets";
 import samosCertification from "../../pages/samosCertification";
-import samosMedical from "../../pages/samosMedical";
+import samosMedical from "../../pages/samosDutiesResponsibilities";
 import nomikosInfo from "../../pages/nomikos";
 import nomikosCertification from "../../pages/nomikosCertification";
 import nomikosMedical from "../../pages/nomikosMedical";
@@ -115,9 +115,9 @@ class PersistentDrawer extends React.Component {
 							<LocaleRoute exact path={'/application'} component={Application} />
 							<LocaleRoute exact path={'/contacts'} component={Contacts} />
 							<LocaleRoute exact path={'/samos'} component={samosInfo} />
-							<LocaleRoute exact path={'/samosCadets'} component={samosCadets} />
-							<LocaleRoute exact path={'/samosCertification'} component={samosCertification} />
-							<LocaleRoute exact path={'/samosMedical'} component={samosMedical} />
+							<LocaleRoute exact path={'/samos-cadets'} component={samosCadets} />
+							<LocaleRoute exact path={'/samos-certification'} component={samosCertification} />
+							<LocaleRoute exact path={'/samos-duties-responsibilities'} component={samosMedical} />
 							<LocaleRoute exact path={'/nomikos'} component={nomikosInfo} />
 							<LocaleRoute exact path={'/nomikosCertification'} component={nomikosCertification} />
 							<LocaleRoute exact path={'/nomikosMedical'} component={nomikosMedical} />

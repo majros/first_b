@@ -15,6 +15,9 @@ class samosCadets extends React.Component {
 		const {classes} = this.props;
 
 		return <main>
+			<Typography className={classes.typography} variant={'headline'} align={'center'}>
+				SAMOS Cadets program of Ukrainian Nationality
+			</Typography>
 			<Typography className={classes.typography} variant={'body1'}>
 				<FormattedMessage id="samosCadets.samosContent1"/>
 			</Typography>
