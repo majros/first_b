@@ -7,19 +7,19 @@ import offenPhoto from './img/offen_1.jpg';
 export const listOfPartners = [
 	{
 		company: 'SAMOS STEAMSHIP Co.',
-		site: '/samos',
+		site: 'https://samossteamship.gr/#home',
 		pict: samosPhoto,
 		descript: <FormattedMessage id="partners.descriptSamos"/>
 	},
 	{
 		company: 'A.M. NOMIKOS T.W.M.A. S.A.',
-		site: '/nomikos',
+		site: 'https://www.amnomikos.com/',
 		pict: nomikosPhoto,
 		descript: <FormattedMessage id="partners.descriptNomikos"/>
 	},
 	{
 		company: 'Offengroup',
-		site: '/offen',
+		site: 'https://offengroup.de/',
 		pict: offenPhoto,
 		descript: <FormattedMessage id="partners.descriptOffen"/>
 	}
