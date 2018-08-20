@@ -2,22 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="41786e5d-0daa-4a6d-9233-f6b6d527b1f2" name="Default" comment="" />
-    <list default="true" id="12936739-f0cd-440d-a84e-44088e742e90" name="FrontEnd" comment="заполнил заготовка самос без проверки">
-      <change afterPath="$PROJECT_DIR$/src/components/img/_License.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/img/_MLC 04.2018.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/img/_certificate.jpg" afterDir="false" />
+    <list default="true" id="12936739-f0cd-440d-a84e-44088e742e90" name="FrontEnd" comment="заполнил заготовка самос без проверки++">
+      <change afterPath="$PROJECT_DIR$/src/components/img/arrowIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/lineGridCertification.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/listOfPromotion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/img/samosSeamenPromotion.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/img/samosSeamenPromotion.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/drawer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Able seamen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Bosun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Cadet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Chief Engine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Chief cook.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Chief officer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Electrician.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Fitter.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Junior Engine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Junior officer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Mess man.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Oiler.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Ordinary seamen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Pump man.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Second Engine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Second officer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Third Engine.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Third officer.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/Wiper.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/_MLC 04.2018.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/img/_MLC 04.2018.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/img/master.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dictionary/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/dictionary/messages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/certification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/listOfImages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listOfImages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/listOfResponsibilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/listOfResponsibilities.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/samos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/samos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/samosCertification.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/samosCertification.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/vacancies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/vacancies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,20 +53,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="drawer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/drawer.js">
+      <file leaf-file-name="lineGridCertification.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/lineGridCertification.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-595">
-              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="408">
+              <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/layout/footer.js">
+      <file leaf-file-name="listOfImages.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/listOfImages.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="367">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/manifest.json" />
-        <option value="$PROJECT_DIR$/src/components/layout/package.json" />
         <option value="$PROJECT_DIR$/src/components/NavTab.js" />
         <option value="$PROJECT_DIR$/src/components/Drawer.js" />
         <option value="$PROJECT_DIR$/src/components/Header.js" />
@@ -115,26 +136,28 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/pages/contacts.js" />
         <option value="$PROJECT_DIR$/src/components/mapContainer.js" />
-        <option value="$PROJECT_DIR$/src/test.js" />
         <option value="$PROJECT_DIR$/src/components/localeRoute/listOfVacancies.js" />
         <option value="$PROJECT_DIR$/src/components/listOfVacancies.js" />
-        <option value="$PROJECT_DIR$/src/components/listOfImages.js" />
         <option value="$PROJECT_DIR$/src/pages/samosCadets.js" />
         <option value="$PROJECT_DIR$/src/components/listOfPartners.js" />
         <option value="$PROJECT_DIR$/src/pages/partners.js" />
-        <option value="$PROJECT_DIR$/src/pages/samosCertification.js" />
-        <option value="$PROJECT_DIR$/src/components/listOfResponsibilities.js" />
-        <option value="$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js" />
         <option value="$PROJECT_DIR$/src/pages/vacancies.js" />
         <option value="$PROJECT_DIR$/src/pages/application.js" />
-        <option value="$PROJECT_DIR$/src/components/lineGridList.js" />
-        <option value="$PROJECT_DIR$/src/pages/company.js" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.js" />
         <option value="$PROJECT_DIR$/src/dictionary/messages.js" />
         <option value="$PROJECT_DIR$/src/components/layout/layout.js" />
         <option value="$PROJECT_DIR$/src/components/layout/drawer.js" />
         <option value="$PROJECT_DIR$/src/pages/samos.js" />
+        <option value="$PROJECT_DIR$/src/components/listOfResponsibilities.js" />
+        <option value="$PROJECT_DIR$/src/pages/samosCertification.js" />
+        <option value="$PROJECT_DIR$/src/components/listOfPromotion.js" />
+        <option value="$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js" />
+        <option value="$PROJECT_DIR$/src/components/lineGridList.js" />
+        <option value="$PROJECT_DIR$/src/pages/company.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
         <option value="$PROJECT_DIR$/src/components/layout/footer.js" />
+        <option value="$PROJECT_DIR$/src/components/listOfImages.js" />
+        <option value="$PROJECT_DIR$/src/components/lineGridCertification.js" />
       </list>
     </option>
   </component>
@@ -150,9 +173,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="353" />
+    <option name="x" value="597" />
     <option name="y" value="-4" />
-    <option name="width" value="928" />
+    <option name="width" value="684" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -187,12 +210,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dictionary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bark" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +311,7 @@
       <workItem from="1534410211217" duration="1671000" />
       <workItem from="1534488512607" duration="1813000" />
       <workItem from="1534493181450" duration="3820000" />
-      <workItem from="1534621745689" duration="582000" />
+      <workItem from="1534621745689" duration="16609000" />
     </task>
     <task id="LOCAL-00001" summary="drawer+header+navtab">
       <created>1533241642260</created>
@@ -380,11 +397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1534410724490</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="заполнил заготовка самос без проверки++">
+      <created>1534746048175</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1534746048175</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133369000" />
+    <option name="totallyTimeSpent" value="149396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -399,7 +423,7 @@
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4982699" visible="true" weight="0.21780604" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.4982699" visible="true" weight="0.19475357" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32946634" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50158983" side_tool="true" weight="0.22273782" />
@@ -486,31 +510,11 @@
     <MESSAGE value="много все по чутьчуть" />
     <MESSAGE value="заполнил частично самос" />
     <MESSAGE value="заполнил заготовка самос без проверки" />
-    <option name="LAST_COMMIT_MESSAGE" value="заполнил заготовка самос без проверки" />
+    <MESSAGE value="заполнил заготовка самос без проверки++" />
+    <option name="LAST_COMMIT_MESSAGE" value="заполнил заготовка самос без проверки++" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-intl/lib/index.es.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3727">
-          <caret line="1394" column="4" selection-start-line="1394" selection-start-column="4" selection-end-line="1394" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/localeRoute/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -597,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/offen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -660,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="7" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -695,34 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listOfPartners.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listOfImages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="2" lean-forward="true" selection-start-line="5" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listOfVacancies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/listOfResponsibilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/vacancies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2329">
@@ -738,38 +700,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/certification.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/lineGridList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/umd/material-ui.development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="20163" column="4" selection-start-line="20163" selection-start-column="4" selection-end-line="20163" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/partners.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="75" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/company.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -780,31 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/layout/layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dictionary/messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="125" selection-start-line="27" selection-start-column="125" selection-end-line="27" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/samosCertification.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="38" column="49" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -815,17 +728,153 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listOfPartners.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listOfVacancies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/partners.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/es/Typography/Typography.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="202" column="108" selection-start-line="202" selection-start-column="98" selection-end-line="202" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listOfPromotion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listOfResponsibilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="6" lean-forward="true" selection-end-line="35" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/lineGridList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/samosDutiesResponsibilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="36" column="66" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/samosCertification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="71" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="45" column="36" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/drawer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="153">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="88" column="56" lean-forward="true" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/company.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-952">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/layout/footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="84">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/listOfImages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/lineGridCertification.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

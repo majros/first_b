@@ -1,59 +1,60 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
-import Typography from '@material-ui/core/Typography';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+class LineGridCertification extends React.Component {
+	state = {
+		anchorEl: null,
+	};
 
-const styles = theme => ({
-	root: {
-		width: '100%',
-	},
-	heading: {
-		fontSize: theme.typography.pxToRem(15),
-		fontWeight: theme.typography.fontWeightRegular,
-	},
-});
+	handleClick = event => {
+		this.setState({ anchorEl: event.currentTarget });
+	};
 
-function SimpleExpansionPanel(props) {
+	handleClose = () => {
+		this.setState({ anchorEl: null });
+	};
+
+	render() {
+		const { anchorEl } = this.state;
+
+		return (
+			<div>
+				<div className={classes.root}>
+					<GridList className={classes.gridList} cols={3}>
+						{listOfCertification.map(tile => (
+							<GridListTile key={tile.img}>
+								<img style={{height:'100%', width:'140px'}}
+								     aria-owns={anchorEl ? 'simple-menu' : null}
+								     aria-haspopup="true"
+								     onClick={this.handleClick}
+							     src={tile.img} alt='icon'/>
+							</GridListTile>
+						))}
+					</GridList>
+				</div>
+				<Menu
+					id="simple-menu"
+					anchorEl={anchorEl}
+					open={Boolean(anchorEl)}
+					onClose={this.handleClose}
+				>
+				</Menu>
+			</div>
+		);
+	}
+}
+
+export default LineGridCertification;
+
+function LineGridCertification(props) {
 	const { classes } = props;
+
 	return (
 		<div className={classes.root}>
-			<ExpansionPanel>
-				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-					<Typography className={classes.heading}>Expansion Panel 1</Typography>
-				</ExpansionPanelSummary>
-				<ExpansionPanelDetails>
-					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-						sit amet blandit leo lobortis eget.
-					</Typography>
-				</ExpansionPanelDetails>
-			</ExpansionPanel>
-			<ExpansionPanel>
-				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-					<Typography className={classes.heading}>Expansion Panel 2</Typography>
-				</ExpansionPanelSummary>
-				<ExpansionPanelDetails>
-					<Typography>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-						sit amet blandit leo lobortis eget.
-					</Typography>
-				</ExpansionPanelDetails>
-			</ExpansionPanel>
-			<ExpansionPanel disabled>
-				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-					<Typography className={classes.heading}>Disabled Expansion Panel</Typography>
-				</ExpansionPanelSummary>
-			</ExpansionPanel>
+			<GridList className={classes.gridList} cols={3}>
+				{listOfCertification.map(tile => (
+					<GridListTile key={tile.img}>
+						<img src={tile.img} alt='icon' style={{height:'100%', width:'140px'}}/>
+					</GridListTile>
+				))}
+			</GridList>
 		</div>
 	);
 }
-
-SimpleExpansionPanel.propTypes = {
-	classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(SimpleExpansionPanel);

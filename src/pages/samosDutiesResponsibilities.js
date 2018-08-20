@@ -16,6 +16,9 @@ const styles = theme => ({
 		fontSize: theme.typography.pxToRem(18),
 		fontWeight: theme.typography.fontWeightRegular,
 	},
+	table: {
+		paddingLeft: 20,
+	},
 });
 
 class samosDutiesResponsibilities extends React.Component {
@@ -26,18 +29,24 @@ class samosDutiesResponsibilities extends React.Component {
 			<Typography className={classes.typography} variant={'headline'}>
 				SAMOS Shipboard Personnel Duties & Responsibilities
 			</Typography>
-			{listOfResponsibilities.map(lst => {
-				return (
-					<ExpansionPanel key={lst.rank} >
-						<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-							<Typography className={classes.heading}>{lst.rank}</Typography>
-						</ExpansionPanelSummary>
-						<ExpansionPanelDetails >
-							<img alt='icon' src={lst.role}/>
-						</ExpansionPanelDetails>
-					</ExpansionPanel>
-				);
-			})}
+			{listOfResponsibilities.map(lst => (
+				<ExpansionPanel key={lst.rank} >
+					<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+						<Typography className={classes.heading}>{lst.rank}</Typography>
+					</ExpansionPanelSummary>
+					<ExpansionPanelDetails style={{display: 'table'}}>
+						<Typography className={classes.typography} variant={'title'}>
+							Qualifications:
+						</Typography>
+						{lst.qualifications.map( qlst =>
+							<Typography key={qlst}><li className={classes.table}>{qlst}</li></Typography>)}
+						<Typography className={classes.typography} variant={'title'}>
+							Responsibility & Authority:
+						</Typography>
+						{lst.responsibility.map( rlst =>
+							<Typography key={rlst}><li className={classes.table}>{rlst}</li></Typography>)}
+				</ExpansionPanelDetails>
+			</ExpansionPanel>))}
 		</main>;
 	}
 }

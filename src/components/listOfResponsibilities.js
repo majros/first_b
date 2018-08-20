@@ -1,92 +1,386 @@
-import master from './img/master.jpg'
-import chiefOfficer from './img/Chief officer.jpg'
-import secondOfficer from './img/Second officer.jpg'
-import thirdOfficer from './img/Third officer.jpg'
-import juniorOfficer from './img/Junior officer.jpg'
-
 export const listOfResponsibilities = [
 	{
 		rank: 'Master',
-		role: master,
+		qualifications: [
+			'Valid license and certification',
+			'Experience on a similar class of vessel',
+			'Good managerial and people handling qualities',
+			'Good communications skills',
+			'Conversational proficiency in English'
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Responsible for the safety of the crew, environment, vessel and cargo',
+			'Motivating the crew in the observation of the Company Policy',
+			'Issue orders in a clear and simple manner',
+			'Safeguard the interests of the Company and, by extension, its customers',
+			'Ensure that he and his crew are familiar with the Company Policy, HSE procedures and instructions as well ' +
+			'as applicable rules and regulations',
+			'Delegate responsibilities to officers/crew and maintain discipline and order',
+			'Ensure that applicable laws, rules and regulations and other requirements are observed at all times',
+			'Review the HSE manual and report to the Company any ideas, suggestions or irregularities in the procedures',
+			'Report incidents, accidents or near misses and request assistance when deemed necessary',
+			'Ensure that all documentation and records on-board his vessel are properly controlled',
+			'Ensure his vessel fitness (equipment, crew competence, navigational aids accuracy etc.) for the intended voyage',
+			'Identify needs, plan and supervise training on board',
+			'Monitor implementation of environmental objectives and targets',
+			'Appoint Safety/Environmental and Navigation Officers',
+			'Is designated to take charge of medical treatment on board. Responsible for Narcotics administration',
+			'SSO (Ship Security Officer)',
+			'In adverse circumstances and regarding decisions concerning safety and environmental protection (pollution ' +
+			'prevention) the Master has overriding authority even if that may mean deviation from documented procedures ' +
+			'and/or instructions',
+			'The Master should report any instance of commercial pressure exerted on or any intimidation of' +
+			'his. The Master should be able to exercise his professional judgment in a free manner',
+		],
 	},
 	{
 		rank: 'Chief Officer',
-		role: chiefOfficer,
+		qualifications: [
+			'Valid license and certification',
+			'Experience on a similar class of vessel',
+			'Good managerial and people handling qualities',
+			'Good communications skills',
+			'Conversational proficiency in English'
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Assistance to and replacement of the Master when and if necessary',
+			'Personnel safety and environmental protection (pollution prevention) during all operations',
+			'Perform watch keeping duties',
+			'Planning & supervising deck crew duties',
+			'Planning and supervising all maintenance work outside machinery spaces',
+			'Planning & monitoring cargo operations',
+			'Vessel condition monitoring',
+			'Maintenance of documents and records',
+			'Training of junior deck officers /apprentices /cadets and crew',
+			'Crew management',
+			'Ensure proper disposal and/or incineration of garbage - as per relevant regulations',
+			'Medical Officer, responsible to the Master for routine medical treatment on board',
+			'Health Safety and Environmental Officer (can delegate related duties to 2nd or 3rd Officers when deemed appropriate)',
+			'Implement and report progress on environmental objectives and targets applicable to his department',
+			'Take part in the HSE manual onboard review',
+			'In charge in receiving stores, supplies',
+		],
 	},
 	{
 		rank: 'Second Officer',
-		role: secondOfficer,
+		qualifications: [
+			'Valid license and certification',
+			'Experience on a similar class of vessel',
+			'Good communications skills',
+			'Working knowledge of English',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Assist Chief Officer',
+			'Perform watch keeping duties',
+			'Upkeep charts and publications',
+			'Monitor navigation equipment and ensure its readiness',
+			'Actively participate in planning, cargo-line setting and execution of the cargo and ballast operations',
+			'Perform duties as Navigation Officer',
+			'Maintain National and signal flags',
+			'Assist C/O for receiving stores',
+			'Train junior deck officers/cadets and crew',
+			'Propose suggestions for the improvement of the HSE manual',
+		],
 	},
 	{
 		rank: 'Third Officer',
-		role: thirdOfficer,
+		qualifications: [
+			'Valid license and certification',
+			'Working knowledge of English',
+			'Good communications skills',
+			'Experience on similar class vessel (if possible)',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Assist 2/O',
+			'Perform watch keeping duties',
+			'Ensure bridge equipment readiness',
+			'Perform duties as Navigation or Communication Officer (when assigned)',
+			'Ensure lifeboat equipment readiness and maintenance',
+			'Responsible for accommodation & external areas firefighting equipment (including fire plans, fire and foam ' +
+			'hoses, nozzles and fireman’s outfits) and its readiness for immediate use',
+			'Actively participate in planning, cargo-line setting and execution of the cargo and ballast operations',
+			'Keep records of FFE and LSA equipment',
+			'Ensure that pollution prevention equipment is available, functional and properly maintained',
+			'Supervise deck crew activities e.g. mooring, stores receiving',
+			'Train cadets and crew',
+			'Propose suggestions for the improvement of the HSE manual',
+		],
 	},
 	{
 		rank: 'Junior Officer',
-		role: juniorOfficer,
+		qualifications: [
+			'Valid license and certification',
+			'Working knowledge of English',
+			'Good communications skills',
+			'Experience on similar class vessel (if possible)',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch keeping duties, under supervision of the Master or C/O unless if at Master’s discretion are ' +
+			'capable to perform watch keeping duties as per procedure',
+			'Assisting 3/O in performing his duties on communication, on LSA and FFE monitoring/maintenance and record ' +
+			'keeping, on supervising deck crew activities',
+			'Actively participate in planning, cargo-line setting and execution of the cargo and ballast operations',
+			'Performing clerical work, as directed by Master',
+		],
 	},
 	{
 		rank: 'Chief Engineer',
-		role: 'Kokkari',
+		qualifications: [
+			'Valid license and certification',
+			'Experience with same type of machinery and equipment',
+			'Good managerial and people handling qualities',
+			'Good communications skills',
+			'Conversational proficiency in English',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Ensure proper machinery and equipment operation and maintenance',
+			'Monitor machinery and equipment condition',
+			'Supervise Engine dept. crewmembers',
+			'Manage engine stores, spares, fuels and lubricants (inventory control)',
+			'Familiarize, train and supervise engine room staff',
+			'Supervise and approve repairs (including 3rd party, i.e. dry-docking)',
+			'Report casualties, near misses, defects and improvement opportunities',
+			'Request and utilize assistance from the Technical Department staff when necessary',
+			'Ensure that all Engine Department documentation and records are properly maintained',
+			'Implement and report progress on environmental objectives and targets applicable to his department',
+			'Test and record performance data for all Critical Equipment and compare against base line criteria',
+		],
 	},
 	{
 		rank: 'Second Engineer',
-		role: 'Kokkari',
+		qualifications: [
+			'Valid license/certification',
+			'Good communications abilities skills',
+			'Working knowledge of English',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch keeping duties',
+			'Ensure maintenance and cleanliness of machinery spaces',
+			'Ensure safety & alarm systems are functional',
+			'Supervise and allocate responsibilities and duties of Engineers',
+			'Ensure E/R staff familiarization with emergency equipment and its use',
+			'Responsible for the emer. equipment testing',
+			'Ensure that main propulsion unit (including all associated systems and equipment), ballast system, cargo' +
+			' pumps (where applicable), steering gear systems, HVAC and refrigeration systems are operational, tested ' +
+			'regularly and results properly recorded',
+			'Storekeeper (E/R) - Ensure safe & secure stowage of spare gear & E/R chemicals',
+			'Report to Chief Engineer any defects or abnormalities regarding the operation and performance of the machinery and equipment',
+			'Inform Chief Engineer of spare part needs',
+			'Train Engine Dept. Cadets',
+			'Monitor operation and maintenance of electrical equipment',
+			'Take part in the HSE manual onboard review',
+		],
 	},
 	{
 		rank: 'Third & Fourth Engineer',
-		role: 'Kokkari',
+		qualifications: [
+			'Valid license/certification or practical marine engineering experience',
+			'Good general knowledge of ship’s engineer activities',
+			'Working knowledge of English',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch keeping duties',
+			'Ensure that auxiliary engines/generators, boilers (including all associated systems and equipment) – as ' +
+			'assigned by the Chief Engineer - are operational, tested regularly and results properly recorded',
+			'Responsible for the maintenance of all deck systems, machinery and equipment',
+			'Responsible for the maintenance of laundry, galley and pantry machinery',
+			'Test weekly (start and control) lifeboats and rescue boat engines (when fitted)',
+			'Report to Chief Engineer any defects or abnormalities regarding the operation and performance of the machinery and equipment',
+			'Provide assistance with the training of Cadets',
+		],
 	},
 	{
 		rank: 'Junior Engineer',
-		role: 'Kokkari',
+		qualifications: [
+			'Valid license and certification',
+			'Working knowledge of English',
+			'General knowledge of ship’s engineer activities',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch keeping duties, under supervision of the C/E or 2/E unless if at Ch. Engineer’s discretion ' +
+			'are capable to perform watch keeping duties as per procedure',
+			'Training and assisting 3/E in performing his duties',
+			'Performing clerical work, as directed by C/E',
+		],
 	},
 	{
 		rank: 'Electrician',
-		role: 'Kokkari',
+		qualifications: [
+			'Extensive practical experience of marine electrical applications',
+			'Working knowledge of English',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Monitor the status of all ship electrical equipment and keep records as required',
+			'Maintain explosion proof, flame proof and intrinsically safe equip',
+			'Record daily (Work Book) consumption of spare parts used, stores etc',
+			'Test deck lights before arrival',
+			'Clean electrical workshop and storeroom',
+			'Inspect and maintain steering gear control system',
+			'Ensure that records of insulation tests are maintained and test equipment is in full working condition',
+			'Maintain and update inventory of the consumable electric stores and report to 2nd Engineer eventual requirements',
+			'Ensure restoration of all services in the event of failure',
+			'Ensure that electrical drawings and instructions books are kept in good order and updated',
+		],
 	},
 	{
 		rank: 'BOSUN',
-		role: 'Kokkari',
+		qualifications: [
+			'Appropriate seagoing experience',
+			'Working knowledge of English',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Deploy and supervise deck crew',
+			'Monitor deck crew’s daily work',
+			'Ensure that deck equipment and systems are maintained',
+			'Ensure that all deck stores are received, stored, kept in good condition and levels monitored and controlled (Storekeeper - deck)',
+			'Ensure that new deck crew is familiarized with the handling of deck machinery (especially the windlass and mooring winches)',
+		],
 	},
 	{
 		rank: 'Pump man',
-		role: 'Kokkari',
+		qualifications: [
+			'Practical experience of cargo handling systems (including Tanker Safety Course)',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Monitor operational status of cargo handling systems and report problems',
+			'Assist the Duty Officer /Cargo Surveyor with temperature /ullage readings and cargo samplings',
+			'Carry out inspections, maintenance and cleaning of the pump room',
+			'Ensure that all valves, pipes and tanks, etc. are properly marked for easy identification',
+			'Replace/maintain reducers, packing and flanges as necessary',
+			'Keep all tools, equipment, pump man store etc. in good order',
+			'Participate (with members of the Engine Department) in the overhauling and routine maintenance of ' +
+			'cargo handling systems and deck machinery',
+		],
 	},
 	{
 		rank: 'Able Seaman',
-		role: 'Kokkari',
+		qualifications: [
+			'Appropriate seagoing experience',
+			'Valid license/Certificate',
+			'English knowledge for helmsman duties',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch and steering duties',
+			'Carry out maintenance tasks',
+			'Carry out operational duties related to cargo and navigational activities',
+			'Ensure cleanliness and general hygiene of the vessel',
+		],
 	},
 	{
 		rank: 'Ordinary Seaman',
-		role: 'Kokkari',
+		qualifications: [
+			'Appropriate seagoing experience',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Carry out maintenance tasks',
+			'Carry out operational duties related to cargo nd navigational activities',
+			'Ensure cleanliness and general hygiene of the vessel',
+		],
 	},
 	{
 		rank: 'Oiler',
-		role: 'Kokkari',
+		qualifications: [
+			'Experience as Wiper',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Perform watch keeping duties',
+			'Monitor plant status (taking and logging machinery readings)',
+			'Monitor and ensure proper equipment and systems operation',
+			'Carry out maintenance duties',
+			'Provide assistance with painting, provisioning, shore loading, cargo tank cleaning (as directed by Chief Officer and 2/E)',
+		],
 	},
 	{
 		rank: 'Wiper',
-		role: 'Kokkari',
+		qualifications: [
+			'Appropriate seagoing experience',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Carry out specific cleaning duties as di',
+			'Carry out specific tasks involved with Engine Department maintenance and repair as directed',
+		],
 	},
 	{
 		rank: 'Deck / Engine Fitter',
-		role: 'Kokkari',
+		qualifications: [
+			'Extensive welding and general workshop experience',
+			'Valid license/Certificate',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Carry out overhauling and maintenance',
+		],
 	},
 	{
 		rank: 'Deck / Engine Cadet',
-		role: 'Kokkari',
+		qualifications: [
+			'Valid Training Courses',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'General duties as assigned by the supervising officer',
+			'Fulfill the training program assigned by the supervising officer',
+		],
 	},
 	{
 		rank: 'Chief Cook',
-		role: 'Kokkari',
+		qualifications: [
+			'Professional cook with good preservation experience',
+			'Certificate issued or approved by Flag State',
+			'Good Knowledge of English',
+			'Not under the age of 18',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Plan and prepare meals in respect to crew religious requirements and cultural practices',
+			'Prepare weekly menu of an adequate nutritional value and variety',
+			'Ensuring that the company’s instructions related to food preparation and hygiene standards are followed & implemented',
+			'Maintain the galley, provision storeroom and refrigerators clean and tidy and in hygienic condition',
+			'Check deliveries & then sign receipts; report to the Master eventual problems',
+			'Storekeeper – catering & cabin - Monitor and control provision inventories',
+			'Ensure that food is best preserved',
+			'Monitor and control linen and cutlery',
+			'Ensure proper segregation and storage of garbage - as per relevant regulations',
+		],
 	},
 	{
 		rank: 'Mess Man',
-		role: 'Kokkari',
-	},
-	{
-		rank: 'Junior Officers',
-		role: 'Kokkari',
+		qualifications: [
+			'Shipboard experience in catering',
+			'Trained or instructed in food and health areas including food and personal hygiene, handling and storage of food onboard ship',
+		],
+		responsibility: [
+			'Implement Company Policy and conduct activity according with HSE procedures',
+			'Ensure that all cabins of officers and senior staff are cleaned',
+			'Prepare Officers mess room, serve meals',
+			'Ensure that the company’s instructions related to food preparation and hygiene standards are followed & implemented',
+			'Clean dishes and utensils',
+			'Laundry duties for vessel linen',
+			'Control the linen & cleaning food stores',
+			'Clean the lint in the laundry drier device (Weekly)',
+			'Ensure proper segregation and storage of garbage - as per relevant regulations',
+		],
 	},
 ];

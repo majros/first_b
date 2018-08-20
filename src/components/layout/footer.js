@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 const stylesFoot = {
-	height: 49,
+	height: 48,
 	width: '100%',
 	alignItems: 'center',
 	backgroundColor: '#6573c3',

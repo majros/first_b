@@ -1,8 +1,10 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import {withStyles} from '@material-ui/core/styles';
 import samosSeamenCertification from '../components/img/samosSeamenCertification.jpg'
-import samosSeamenPromotion from '../components/img/samosSeamenPromotion.jpg'
+import { listOfPromotion } from '../components/listOfPromotion'
+import arrowIcon from '../components/img/arrowIcon.png'
 
 const styles = theme => ({
 	typography: {
@@ -38,7 +40,19 @@ class samosCertification extends React.Component {
 			<Typography className={classes.typography2} variant={'title'}>
 				Recommended Promotional Intervals
 			</Typography>
-			<img alt='icon' src={samosSeamenPromotion}/>
+			<Typography className={classes.typography} variant={'subheading'}>
+				Company Requirements in addition to the STCW, as amended
+			</Typography>
+			{listOfPromotion.map( lst =>
+				<Grid container justify={'center'} spacing={24} key={lst.id}>
+					<Grid item xs={2}>
+						<Typography key={lst}>{lst.pj}  <img alt='icon' src={arrowIcon}/>  {lst.nj}</Typography>
+					</Grid>
+					<Grid item xs={10}>
+						<Typography key={lst}>{lst.jdscr}</Typography>
+					</Grid>
+				</Grid>)}
+
 		</main>;
 	}
 }
