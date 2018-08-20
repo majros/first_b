@@ -9,7 +9,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import CompanyIcon from '@material-ui/icons/DirectionsBoat';
 import PartnersIcon from '@material-ui/icons/Group';
-import CertificationIcon from '@material-ui/icons/AssignmentTurnedIn';
 import VacanciesIcon from '@material-ui/icons/Assignment';
 import ApplicationIcon from '@material-ui/icons/Description';
 import ContactIcon from '@material-ui/icons/Info';
@@ -44,12 +43,6 @@ class LocaleDrawer extends React.Component {
 						<CompanyIcon />
 					</ListItemIcon>
 					<ListItemText primary={<FormattedMessage id="drawerList.textItem1"/>}/>
-				</ListItem>
-				<ListItem button component={Link} to={'/certification'}>
-					<ListItemIcon>
-						<CertificationIcon />
-					</ListItemIcon>
-					<ListItemText primary={<FormattedMessage id="drawerList.textItem2"/>} />
 				</ListItem>
 				<ListItem button component={Link} to={'/partners'} >
 					<ListItemIcon>

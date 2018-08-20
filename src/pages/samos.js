@@ -15,7 +15,7 @@ class samosInfo extends React.Component {
 
 		return <main>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
-				Mission and Vision SAMOS Statement
+				SAMOS Mission and Vision Statement
 			</Typography>
 			<Typography className={classes.typography} variant={'body1'} >
 				Samos Steamship (Cyprus) Ltd. vision is to provide the best sea transportation quality services with ZERO

@@ -15,7 +15,6 @@ import BtnFabUp from '@material-ui/icons/ArrowUpward';
 import { styles } from './style'
 import Header from './header'
 import Company from "../../pages/company";
-import Certification from "../../pages/certification";
 import Partners from "../../pages/partners";
 import Vacancies from "../../pages/vacancies";
 import Application from "../../pages/application";
@@ -109,7 +108,6 @@ class PersistentDrawer extends React.Component {
 						<div className={classes.drawerHeader} />
 						<Switch>
 							<LocaleRoute exact path={'/company'} component={Company} />
-							<LocaleRoute exact path={'/certification'} component={Certification} />
 							<LocaleRoute exact path={'/partners'} component={Partners} />
 							<LocaleRoute exact path={'/vacancies'} component={Vacancies} />
 							<LocaleRoute exact path={'/application'} component={Application} />

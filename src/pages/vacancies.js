@@ -146,7 +146,7 @@ class Vacancies extends React.Component {
 						</Table>
 					</ExpansionPanelDetails>
 				</ExpansionPanel>
-			</Paper>;
+			</Paper>
 		</main>
 	}
 }

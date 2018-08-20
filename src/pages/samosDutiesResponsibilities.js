@@ -28,11 +28,11 @@ class samosDutiesResponsibilities extends React.Component {
 			</Typography>
 			{listOfResponsibilities.map(lst => {
 				return (
-					<ExpansionPanel>
+					<ExpansionPanel key={lst.rank} >
 						<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
 							<Typography className={classes.heading}>{lst.rank}</Typography>
 						</ExpansionPanelSummary>
-						<ExpansionPanelDetails>
+						<ExpansionPanelDetails >
 							<img alt='icon' src={lst.role}/>
 						</ExpansionPanelDetails>
 					</ExpansionPanel>

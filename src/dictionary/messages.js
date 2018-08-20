@@ -2,7 +2,6 @@ export const messages = {
 	'en-US': {
 		drawerList: {
 			textItem1: 'About Us',
-			textItem2: 'Certifiaction',
 			textItem3: 'Partners',
 			textItem4: 'Vacancies',
 			textItem5: 'Application',
@@ -26,7 +25,7 @@ export const messages = {
 			li1: 'Test qualification of the seafarers in their field (Using test program CES developed by Seagull, Norway);',
 			li2: 'Test professional knowledge of English (carried out by English inspector and MARLINS computer test);',
 			li3: 'Verify authenticity of the documents of each seafarer (in the Ministry of Transport of Ukraine).',
-			text3: 'BARK Agency is certified by Russian Register and acts in accordance with ISO 9001:2008 Code requirements.',
+			text3: 'BARK Agency is certified by Russian Register and acts in accordance with ISO 9001:2008 Code requirements:',
 		},
 		partners: {
 			title: 'Our partners',
@@ -72,7 +71,6 @@ export const messages = {
 	'ru-RU': {
 		drawerList: {
 			textItem1: 'О компании',
-			textItem2: 'Сертификация',
 			textItem3: 'Партнеры',
 			textItem4: 'Вакансии',
 			textItem5: 'Анкета',
@@ -96,7 +94,7 @@ export const messages = {
 			li1: 'Тестовая квалификация моряков в своей области (с использованием тестовой программы CES, разработанной Seagull, Norway);',
 			li2: 'Протестируйте профессиональные знания английского языка (проводимые английским инспектором и компьютерным тестом MARLINS);',
 			li3: 'Проверять подлинность документов каждого моряка (в Министерстве транспорта Украины).',
-			text3: 'Агентство BARK сертифицировано Российским регистром и действует в соответствии с требованиями Кодекса ISO 9001: 2008.',
+			text3: 'Агентство BARK сертифицировано Российским регистром и действует в соответствии с требованиями Кодекса ISO 9001: 2008:',
 		},
 		partners: {
 			title: 'Наши партнеры',
