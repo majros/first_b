@@ -3,16 +3,17 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import Menu from '@material-ui/core/Menu';
-import {listOfCertification} from './listOfImages';
-import mlc from './img/_MLC 04.2018.jpg';
+import Dialog from '@material-ui/core/Dialog';
 
+import certificate from './img/_certificate.jpg'
+import license from './img/_License.jpg'
+import mlc from './img/_MLC 04.2018.jpg'
 
 const styles = ({
 	root: {
 		display: 'flex',
 		flexWrap: 'wrap',
-		justifyContent: 'space-around',
+		justifyContent: 'center',
 		overflow: 'hidden',
 	},
 	gridList: {
@@ -20,52 +21,43 @@ const styles = ({
 		transform: 'translateZ(0)',
 	},
 });
+const listOfCertification = [certificate, license, mlc];
 
 class LineGridCertification extends React.PureComponent {
 	state = {
-		anchorEl: null,
+		open: false,
+		selectedValue: null,
 	};
 
-	handleClick = event => {
-		this.setState({ anchorEl: event.currentTarget });
-	};
-
-	handleClose = () => {
-		this.setState({ anchorEl: null });
-	};
+	handleClickOpen = value => {this.setState({ selectedValue: value, open: true})};
+	handleClose = () => {this.setState({ open: false })};
 
 	render() {
-		const { anchorEl } = this.state;
 		const { classes } = this.props;
 
 		return (
 			<div className={classes.root}>
 				<GridList className={classes.gridList} cols={3}>
-					{listOfCertification.map(tile => (
-						<GridListTile key={tile.img}>
+					{listOfCertification.map(lst => (
+						<GridListTile key={lst}>
 							<img style={{height:'100%', width:'140px'}}
-							     aria-owns={anchorEl ? 'simple-menu' : null}
-							     aria-haspopup="true"
-							     onClick={this.handleClick}
-							     src={tile.img} alt='icon'/>
+							     onClick={() => this.handleClickOpen(lst)}
+							     src={lst} alt='icon'/>
 						</GridListTile>
 					))}
 				</GridList>
-				<Menu
-					id="simple-menu"
-					anchorEl={anchorEl}
-					open={Boolean(anchorEl)}
-					onClose={this.handleClose}
-				>
-					<img style={{height:'800px'}} onClick={this.handleClose} src={mlc} alt='icon'/>
-				</Menu>
+				<Dialog open={this.state.open}  onClose={this.handleClose} aria-labelledby="simple-dialog-title" >
+					<img style={{height:'85vh', width:'100%'}}
+					     onClick={() => this.handleClose()}
+					     src={this.state.selectedValue} alt='icon'
+					/>
+				</Dialog>
 			</div>
 		);
 	}
 }
-
 LineGridCertification.propTypes = {
 	classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(LineGridCertification);
+export default  withStyles(styles)(LineGridCertification);

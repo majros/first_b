@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Link} from "react-router-dom";
 import {addLocaleData, FormattedMessage, IntlProvider} from 'react-intl';
 import {connect} from 'react-redux';
@@ -25,7 +25,7 @@ import Divider from "@material-ui/core/es/Divider/Divider";
 
 addLocaleData([...en, ...ru]);
 
-class LocaleDrawer extends React.Component {
+class LocaleDrawer extends React.PureComponent {
 	state = { open: true };
 
 	handleClick = () => {
@@ -37,7 +37,7 @@ class LocaleDrawer extends React.Component {
 			locale={this.props.locale}
 			messages={flattenMessages(messages[this.props.locale])}
 		>
-			<div>
+			<Fragment>
 				<ListItem button component={Link} to={'/company'}>
 					<ListItemIcon>
 						<CompanyIcon />
@@ -126,7 +126,7 @@ class LocaleDrawer extends React.Component {
 					</ListItemIcon>
 					<ListItemText primary={<FormattedMessage id="drawerList.textItem6"/>} />
 				</ListItem>
-			</div>
+			</Fragment>
 		</IntlProvider>
 	}
 }

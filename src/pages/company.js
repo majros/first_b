@@ -16,7 +16,7 @@ class Company extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main>
+		return <main style={{width: 'calc(100vw - 48px)'}}>
 			<Typography className={classes.typography} variant={'headline'}>
 				<FormattedMessage id="company.headline"/>
 			</Typography>

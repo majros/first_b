@@ -38,13 +38,17 @@ class PersistentDrawer extends React.Component {
 		open: true,
 		scrolled: 0,
 	};
+	showFab = {display: 'none'};
 
-	handleDrawerOpen = () => {
-		this.setState({ open: true });
+	componentDidMount() {window.addEventListener('scroll', this.handleScroll);}
+	componentWillUnmount() {window.removeEventListener('scroll', this.handleScroll);}
+	handleScroll = () => {
+		this.initScroll = window.pageYOffset;
+		this.setState(this.showFab = this.initScroll > 400 ? {display: ''} : {display: 'none'});
 	};
-	handleDrawerClose = () => {
-		this.setState({ open: false });
-	};
+
+	handleDrawerOpen = () => {this.setState({ open: true });};
+	handleDrawerClose = () => {this.setState({ open: false });};
 	scrollUp = () => {
 		this.scrolled = window.pageYOffset;
 		this.scrollToTop();
@@ -53,8 +57,8 @@ class PersistentDrawer extends React.Component {
 		let timer;
 		if (this.scrolled > 2*300) {
 			window.scrollTo(0, this.scrolled);
-			this.scrolled = this.scrolled -300;
-			timer = setTimeout(this.scrollToTop, 50);
+			this.scrolled = this.scrolled - 300;
+			timer = setTimeout(this.scrollToTop, 100);
 		}
 		else {
 			clearTimeout(timer);
@@ -82,7 +86,7 @@ class PersistentDrawer extends React.Component {
 								onClick={this.handleDrawerOpen}
 								className={classNames(classes.menuButton, open && classes.hide)}
 							>
-								<MenuIcon />
+								<MenuIcon/>
 							</IconButton>
 							<Header/>
 						</Toolbar>
@@ -95,11 +99,12 @@ class PersistentDrawer extends React.Component {
 						<div className={classes.drawerHeader}>
 							<IconButton onClick={this.handleDrawerClose}>{theme.direction = <ChevronLeftIcon />}</IconButton>
 						</div>
-						<Divider />
+						<Divider/>
 						<LocaleDrawer/>
-						<Divider />
+						<Divider/>
 					</Drawer>
 					<main
+						onScroll={this.handleScroll}
 						className={classNames(classes.content, classes[`content-left`], {
 							[classes.contentShift]: open,
 							[classes[`contentShift-left`]]: open,
@@ -130,7 +135,9 @@ class PersistentDrawer extends React.Component {
 						variant="fab"
 						color="secondary"
 						aria-label="BtnFabUp"
-						className={classes.fab}>
+						className={classes.fab}
+						style={this.showFab}
+					>
 						<BtnFabUp />
 					</Button>
 				</div>

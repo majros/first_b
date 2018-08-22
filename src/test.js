@@ -1,60 +1,53 @@
-class LineGridCertification extends React.Component {
-	state = {
-		anchorEl: null,
-	};
+import React from 'react';
+import PropTypes from 'prop-types';
+import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Dialog from '@material-ui/core/Dialog';
+import Typography from '@material-ui/core/Typography';
 
-	handleClick = event => {
-		this.setState({ anchorEl: event.currentTarget });
-	};
+import certificate from './components/img/_certificate.jpg'
+import license from './components/img/_License.jpg'
+import mlc from './components/img/_MLC 04.2018.jpg'
 
-	handleClose = () => {
-		this.setState({ anchorEl: null });
-	};
+const listOfCertification = [certificate, license, mlc];
+
+class SimpleDialog extends React.Component {
+	handleClose = () => {this.props.onClose(this.props.selectedValue)}; //закрыть окно при нажатии вне его
+	handleListItemClick = value => {this.props.onClose(value)}; //вызывается родительская функция с выделенным элементом
 
 	render() {
-		const { anchorEl } = this.state;
+		const { onClose, selectedValue, ...other } = this.props;
+		return (
+			<Dialog onClose={this.handleClose} aria-labelledby="simple-dialog-title" {...other}>
+				<List>
+					{listOfCertification.map(lst => (
+						<ListItem button onClick={() => this.handleListItemClick(lst)} key={lst}>
+							<ListItemText primary={lst} />
+						</ListItem>
+					))}
+				</List>
+			</Dialog>
+		);
+	}
+}
+SimpleDialog.propTypes = {onClose: PropTypes.func, selectedValue: PropTypes.string};
 
+class SimpleDialogDemo extends React.Component {
+	state = {open: false, selectedValue: null,};
+	handleClickOpen = () => {this.setState({open: true})}; //открывает окно
+	handleClose = value => {this.setState({ selectedValue: value, open: false })}; //присваивается значение выбраной картинки и закрывается окно
+
+	render() {
 		return (
 			<div>
-				<div className={classes.root}>
-					<GridList className={classes.gridList} cols={3}>
-						{listOfCertification.map(tile => (
-							<GridListTile key={tile.img}>
-								<img style={{height:'100%', width:'140px'}}
-								     aria-owns={anchorEl ? 'simple-menu' : null}
-								     aria-haspopup="true"
-								     onClick={this.handleClick}
-							     src={tile.img} alt='icon'/>
-							</GridListTile>
-						))}
-					</GridList>
-				</div>
-				<Menu
-					id="simple-menu"
-					anchorEl={anchorEl}
-					open={Boolean(anchorEl)}
-					onClose={this.handleClose}
-				>
-				</Menu>
+				<Typography>Selected: {this.state.selectedValue}</Typography>
+				<Button onClick={this.handleClickOpen}>Open simple dialog</Button>
+				<SimpleDialog selectedValue={this.state.selectedValue} open={this.state.open} onClose={this.handleClose}/>
 			</div>
 		);
 	}
 }
 
-export default LineGridCertification;
-
-function LineGridCertification(props) {
-	const { classes } = props;
-
-	return (
-		<div className={classes.root}>
-			<GridList className={classes.gridList} cols={3}>
-				{listOfCertification.map(tile => (
-					<GridListTile key={tile.img}>
-						<img src={tile.img} alt='icon' style={{height:'100%', width:'140px'}}/>
-					</GridListTile>
-				))}
-			</GridList>
-		</div>
-	);
-}
+export default SimpleDialogDemo;

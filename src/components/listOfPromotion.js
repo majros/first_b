@@ -22,7 +22,7 @@ export const listOfPromotion = [
 		pj: '2 / O',
 		nj: 'C / O',
 		jdscr: '2 promotions + 12 month service as 2 / O + Passed interview for the position of Trainee C / O + 1-3 ' +
-		'months as Trainee C / O + Master’s confirmation (evaluation)for ability to perform duties of C / O +' +
+		'months as Trainee C / O + Master’s confirmation (evaluation)for ability to perform duties of C / O + ' +
 		'Company’s approval + Company’s required courses / training',
 	},
 	{

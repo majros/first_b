@@ -52,7 +52,6 @@ class samosCertification extends React.Component {
 						<Typography key={lst}>{lst.jdscr}</Typography>
 					</Grid>
 				</Grid>)}
-
 		</main>;
 	}
 }

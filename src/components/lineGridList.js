@@ -8,6 +8,7 @@ import {listOfImages} from './listOfImages';
 
 const styles = theme => ({
 	root: {
+		width: '100%',
 		display: 'flex',
 		flexWrap: 'wrap',
 		justifyContent: 'space-around',
