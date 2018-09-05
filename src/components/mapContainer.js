@@ -7,15 +7,13 @@ const MyMapComponent = compose(
 		googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyBzqHiK1b8pJfOR2aQpoxGVzLKDEBsdoNs&v=3." +
 		"exp&libraries=geometry,drawing,places",
 		loadingElement: <div style={{height: `100%`}}/>,
-		containerElement: <div style={{height: `500px`, width: '75vw'}}/>,
+		containerElement: <div style={{height: `500px`, width: '100%'}}/>,
 		mapElement: <div style={{height: `100%`}}/>,
 	}),
 	withScriptjs,
 	withGoogleMap
 )((props) =>
-	<GoogleMap
-		defaultZoom={17}
-		defaultCenter={{lat: 47.074892, lng: 37.508204}}
+	<GoogleMap defaultZoom={17} defaultCenter={{lat: 47.074892, lng: 37.508204}}
 	>
 		{props.isMarkerShown && <Marker position={{lat: 47.074892, lng: 37.508204}} onClick={props.onMarkerClick}/>}
 	</GoogleMap>

@@ -5,7 +5,7 @@ import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import {listOfResponsibilities} from "../components/listOfResponsibilities";
+import {listSamosResponsibilities} from "../components/listSamosResponsibilities";
 
 const styles = theme => ({
 	typography: {
@@ -25,11 +25,11 @@ class samosDutiesResponsibilities extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main>
-			<Typography className={classes.typography} variant={'headline'}>
+		return <React.Fragment>
+			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				SAMOS Shipboard Personnel Duties & Responsibilities
 			</Typography>
-			{listOfResponsibilities.map(lst => (
+			{listSamosResponsibilities.map(lst => (
 				<ExpansionPanel key={lst.rank} >
 					<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
 						<Typography className={classes.heading}>{lst.rank}</Typography>
@@ -45,9 +45,9 @@ class samosDutiesResponsibilities extends React.Component {
 						</Typography>
 						{lst.responsibility.map( rlst =>
 							<Typography key={rlst}><li className={classes.table}>{rlst}</li></Typography>)}
-				</ExpansionPanelDetails>
-			</ExpansionPanel>))}
-		</main>;
+					</ExpansionPanelDetails>
+				</ExpansionPanel>))}
+		</React.Fragment>;
 	}
 }
 

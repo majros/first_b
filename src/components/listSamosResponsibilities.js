@@ -1,4 +1,4 @@
-export const listOfResponsibilities = [
+export const listSamosResponsibilities = [
 	{
 		rank: 'Master',
 		qualifications: [

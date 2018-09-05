@@ -36,9 +36,9 @@ export const messages = {
 			descriptNomikos: 'A.M. Nomikos operates a commercial, corporate and ship management service for ship owning ' +
 			'entities.The Company employs about 1,000 personnel worldwide, on land and sea based operations. The Head ' +
 			'Office and central management is located in Athens with commercial activities situated in London.',
-			descriptOffen: 'The OFFEN GROUP has a long and proud history stretching from the foundation of RCPO in 1971 ' +
-			'to the current day where it has grown to become one of the world\'s leading managers of container shipping, ' +
-			'bulk carriers and product tankers. Shown below are some of the key milestones in the development of the OFFEN GROUP.',
+			descriptOffen: 'Offen Group is a German shipping company based in Hamburg. The company was founded in 1971 by ' +
+			'Klaus-Peter Offen under the name Reederei Claus-Peter Offen GmbH & Co. KG., the youngest son of the ' +
+			'Hamburg ship owner Emil Offen.',
 		},
 		samosCadets:{
 			samosContent1: 'Further to relevant discussions and arrangements regarding subject matter, please be informed ' +
@@ -105,9 +105,9 @@ export const messages = {
 			descriptNomikos: 'Член-корреспондент Nomikos управляет коммерческой, корпоративной и судоремонтной службой для ' +
 			'судовладельцев. В компании работает около 1000 сотрудников по всему миру, на суше и на море. Головной офис' +
 			' и центральное управление расположены в Афинах с коммерческой деятельностью, расположенной в Лондоне.',
-			descriptOffen: 'Группа OFFEN GROUP имеет долгую и гордость историю, которая простирается от основания RCPO в ' +
-			'1971 году до нынешнего дня, когда она превратилась в одного из ведущих мировых менеджеров контейнерных перевозок, ' +
-			'навалочных судов и танкеров товаров. Ниже приводятся некоторые из ключевых этапов развития ОТКРЫТОЙ ГРУППЫ.',
+			descriptOffen: 'Offen Group - немецкая судоходная компания, базирующаяся в Гамбурге. Компания была основана в ' +
+			'1971 году Клаусом-Питером Оффеном под именем Reederei Claus-Peter Offen GmbH & Co. KG, младшего сына ' +
+			'гамбургского судовладельца Эмиля Оффена.',
 		},
 		samosCadets:{samosContent1: 'В дополнение к соответствующим обсуждениям и договоренностям в отношении предмета, пожалуйста, ' +
 			'ознакомьтесь с подробными схемами найма и продвижения кадетов:',

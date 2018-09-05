@@ -22,7 +22,7 @@ const styles = theme => ({
 class Partners extends React.Component {
 	render() {
 		const {classes} = this.props;
-		return <main>
+		return <React.Fragment>
 			<Typography variant={'display1'} style={{textAlign: 'center', paddingBottom: 20}}>
 				<FormattedMessage id="partners.title"/>
 			</Typography>
@@ -39,7 +39,7 @@ class Partners extends React.Component {
 					</Grid>
 				))}
 			</Grid>
-		</main>;
+		</React.Fragment>;
 	}
 }
 

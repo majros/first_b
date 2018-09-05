@@ -21,7 +21,7 @@ class samosCertification extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main>
+		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				SAMOS Seamen Certification
 			</Typography>
@@ -52,7 +52,7 @@ class samosCertification extends React.Component {
 						<Typography key={lst}>{lst.jdscr}</Typography>
 					</Grid>
 				</Grid>)}
-		</main>;
+		</React.Fragment>;
 	}
 }
 

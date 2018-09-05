@@ -22,13 +22,11 @@ import Contacts from "../../pages/contacts";
 import samosInfo from "../../pages/samos";
 import samosCadets from "../../pages/samosCadets";
 import samosCertification from "../../pages/samosCertification";
-import samosMedical from "../../pages/samosDutiesResponsibilities";
+import samosResponsibilities from "../../pages/samosDutiesResponsibilities";
 import nomikosInfo from "../../pages/nomikos";
-import nomikosCertification from "../../pages/nomikosCertification";
-import nomikosMedical from "../../pages/nomikosMedical";
 import offenInfo from "../../pages/offen";
 import offenCertification from "../../pages/offenCertification";
-import offenMedical from "../../pages/offenMedical";
+import offenResponsibilities from "../../pages/offenResponsibilities";
 import Footer from "./footer";
 import LocaleRoute from '../localeRoute';
 import LocaleDrawer from './drawer';
@@ -120,13 +118,11 @@ class PersistentDrawer extends React.Component {
 							<LocaleRoute exact path={'/samos'} component={samosInfo} />
 							<LocaleRoute exact path={'/samos-cadets'} component={samosCadets} />
 							<LocaleRoute exact path={'/samos-certification'} component={samosCertification} />
-							<LocaleRoute exact path={'/samos-duties-responsibilities'} component={samosMedical} />
+							<LocaleRoute exact path={'/samos-duties-responsibilities'} component={samosResponsibilities} />
 							<LocaleRoute exact path={'/nomikos'} component={nomikosInfo} />
-							<LocaleRoute exact path={'/nomikosCertification'} component={nomikosCertification} />
-							<LocaleRoute exact path={'/nomikosMedical'} component={nomikosMedical} />
 							<LocaleRoute exact path={'/offen'} component={offenInfo} />
-							<LocaleRoute exact path={'/offenCertification'} component={offenCertification} />
-							<LocaleRoute exact path={'/offenMedical'} component={offenMedical} />
+							<LocaleRoute exact path={'/offen-certification'} component={offenCertification} />
+							<LocaleRoute exact path={'/offen-duties-responsibilities'} component={offenResponsibilities} />
 							<Redirect from={'/'} to={'/company'} />
 						</Switch>
 					</main>

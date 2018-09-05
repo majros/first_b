@@ -1,15 +1,12 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
-import Divider from '@material-ui/core/Divider';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import MyFancyComponent from '../components/mapContainer';
-import {FormattedMessage} from 'react-intl';
+//import {FormattedMessage} from 'react-intl';
 
 const styles = theme => ({
 	typography: {
-		padding: theme.spacing.unit * 2,
+		padding: theme.spacing.unit * 1,
 	},
 });
 
@@ -17,26 +14,28 @@ class Contacts extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <Paper>
-			<Grid container justify="space-around" alignItems="center">
-				<Grid item>
-					<Typography className={classes.typography} variant={'title'}>
-						<p><FormattedMessage id="contact.line1"/></p>
-						<p><FormattedMessage id="contact.line2"/></p>
-						<Divider/>
-						<p align="right"><FormattedMessage id="contact.line3"/></p>
-						<p align="right">41-71-49</p>
-						<p align="right">41-71-50</p>
-						<Divider/>
-						<p>E-mail: info@bark.com.ua</p>
-						<p>www: http://bark.com.ua/</p>
-					</Typography>
-				</Grid>
-				<Grid item>
-					<MyFancyComponent/>
-				</Grid>
-			</Grid>
-		</Paper>;
+		return <React.Fragment>
+			<Typography className={classes.typography} variant={'headline'} align={'center'}>
+				Мы всегда рады видеть Вас в нашем офисе по адресу:
+			</Typography>
+			<Typography className={classes.typography} variant={'body1'}>
+				Украина, 87517, г. Мариуполь, <br/>
+				улица Черноморская 11, кв. 27
+			</Typography>
+			<Typography className={classes.typography} variant={'body1'}>
+				Тел./Факс: <br/>
+				NOMIKOS +38 (0629) 41-71-48<br/>
+				OFFEN  +38 (0629) 41-71-49<br/>
+				SAMOS  +38 (0629) 41-71-50
+			</Typography>
+			<Typography className={classes.typography} variant={'body1'}>
+				E-mail: info@bark.com.ua
+			</Typography>
+			<Typography className={classes.typography} variant={'title'} align={'center'}>
+				Крюинговое агенство "Барк" на карте Мариуполя:
+			</Typography>
+			<MyFancyComponent/>
+		</React.Fragment>;
 	}
 }
 

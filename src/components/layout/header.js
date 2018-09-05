@@ -101,5 +101,4 @@ const mapDispatchToProps = (dispatch) => ({
 
 Header = withStyles(styles, {withTheme: true})(Header);
 
-export default connect(() => {
-}, mapDispatchToProps)(Header);
+export default connect(() => {}, mapDispatchToProps)(Header);

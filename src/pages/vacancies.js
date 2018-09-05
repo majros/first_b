@@ -36,7 +36,7 @@ class Vacancies extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main>
+		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				Актуальные вакансии на июль 2018 года
 			</Typography>
@@ -147,7 +147,7 @@ class Vacancies extends React.Component {
 					</ExpansionPanelDetails>
 				</ExpansionPanel>
 			</Paper>
-		</main>
+		</React.Fragment>
 	}
 }
 

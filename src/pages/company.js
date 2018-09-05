@@ -16,7 +16,7 @@ class Company extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main style={{width: 'calc(100vw - 48px)'}}>
+		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'}>
 				<FormattedMessage id="company.headline"/>
 			</Typography>
@@ -36,7 +36,7 @@ class Company extends React.Component {
 				<FormattedMessage id="company.text3"/>
 			</Typography>
 			<LineGridCertification/>
-		</main>;
+		</React.Fragment>;
 	}
 }
 

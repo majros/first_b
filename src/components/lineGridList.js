@@ -8,7 +8,6 @@ import {listOfImages} from './listOfImages';
 
 const styles = theme => ({
 	root: {
-		width: '100%',
 		display: 'flex',
 		flexWrap: 'wrap',
 		justifyContent: 'space-around',
@@ -29,7 +28,7 @@ function SingleLineImgList(props) {
 			<GridList className={classes.gridList} cols={2.5}>
 				{listOfImages.map(tile => (
 					<GridListTile key={tile.img}>
-						<img src={tile.img} alt={tile.title} />
+						<img src={tile.img} alt={tile.title} style={{height:'180px'}}/>
 						<GridListTileBar
 							title={tile.title}
 							subtitle={tile.author}

@@ -40,7 +40,7 @@ class LineGridCertification extends React.PureComponent {
 				<GridList className={classes.gridList} cols={3}>
 					{listOfCertification.map(lst => (
 						<GridListTile key={lst}>
-							<img style={{height:'100%', width:'140px'}}
+							<img style={{height:'180px', width:'120px'}}
 							     onClick={() => this.handleClickOpen(lst)}
 							     src={lst} alt='icon'/>
 						</GridListTile>

@@ -13,7 +13,7 @@ class samosInfo extends React.Component {
 	render() {
 		const {classes} = this.props;
 
-		return <main>
+		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				SAMOS Mission and Vision Statement
 			</Typography>
@@ -66,7 +66,7 @@ class samosInfo extends React.Component {
 				To implement this policy, Samos Steamship (Cyprus) Ltd. operates and maintains a Management System,
 				in accordance with the requirements of the ISM Code & ISO 14001:2015.
 			</Typography>
-		</main>;
+		</React.Fragment>;
 	}
 }
 

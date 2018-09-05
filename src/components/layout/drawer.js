@@ -57,39 +57,13 @@ class LocaleDrawer extends React.PureComponent {
 				</ListItem>
 				<Collapse in={this.state.open} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding dense={true}>
-						<Divider />
-						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/samos'}>
-							<ListItemIcon>
-								<StarBorder />
-							</ListItemIcon>
-							<ListItemText inset primary="SAMOS" />
-						</ListItem>
-							<List component="div" disablePadding dense={true}>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-cadets'} >
-									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps1"/>}/>
-								</ListItem>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-certification'}>
-									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
-								</ListItem>
-								<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-duties-responsibilities'}>
-									<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
-								</ListItem>
-							</List>
-					<Divider inset />
+					<Divider />
 						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/nomikos'}>
 							<ListItemIcon>
 								<StarBorder />
 							</ListItemIcon>
 							<ListItemText inset primary="NOMIKOS" />
 						</ListItem>
-								<List component="div" disablePadding dense={true}>
-									<ListItem button style={{padding: '5px'}} component={Link} to={'/nomikosCertification'}>
-										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
-									</ListItem>
-									<ListItem button style={{padding: '5px'}} component={Link} to={'/nomikosMedical'}>
-										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
-									</ListItem>
-								</List>
 					<Divider inset />
 						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/offen'}>
 							<ListItemIcon>
@@ -98,13 +72,31 @@ class LocaleDrawer extends React.PureComponent {
 							<ListItemText inset primary="OFFEN" />
 						</ListItem>
 								<List component="div" disablePadding dense={true}>
-									<ListItem button style={{padding: '5px'}} component={Link} to={'/offenCertification'}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/offen-certification'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
 									</ListItem>
-									<ListItem button style={{padding: '5px'}} component={Link} to={'/offenMedical'}>
+									<ListItem button style={{padding: '5px'}} component={Link} to={'/offen-duties-responsibilities'}>
 										<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
 									</ListItem>
 								</List>
+						<Divider inset />
+						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/samos'}>
+							<ListItemIcon>
+								<StarBorder />
+							</ListItemIcon>
+							<ListItemText inset primary="SAMOS" />
+						</ListItem>
+						<List component="div" disablePadding dense={true}>
+							<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-cadets'} >
+								<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps1"/>}/>
+							</ListItem>
+							<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-certification'}>
+								<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps2"/>} />
+							</ListItem>
+							<ListItem button style={{padding: '5px'}} component={Link} to={'/samos-duties-responsibilities'}>
+								<ListItemText inset secondary={<FormattedMessage id="drawerList.textCollaps3"/>} />
+							</ListItem>
+						</List>
 					<Divider  />
 					</List>
 				</Collapse>
