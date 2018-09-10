@@ -1,3 +1,162 @@
+export const listSamosMedical = [
+	{
+		n: '1',
+		city: 'Moscow',
+		med: 'Germany Embassy Clinic',
+		adress: '56, Mosfilmovskaya str.',
+	},
+	{
+		n: '2',
+		city: 'St Petersburg',
+		med: 'Euroman',
+		adress: '11A, Dvinskaya str., office 8H',
+	},
+	{
+		n: '3',
+		city: 'Rostov on Don',
+		med: 'Gippocrat Plus',
+		adress: '231, Pushkinskaya str.',
+	},
+	{
+		n: '4',
+		city: 'Novorossiysk',
+		med: 'Delphaniya',
+		adress: '162, Dzerzhinskogo ave.',
+	},
+	{
+		n: '5',
+		city: 'Novorossiysk',
+		med: 'Hippocrates',
+		adress: '93, Lenina ave.',
+	},
+	{
+		n: '6',
+		city: 'Novorossiysk',
+		med: 'Southern District Clinic Center (Moryakov)',
+		adress: '16/18, Novorossiyskoy respubliki str.',
+	},
+	{
+		n: '7',
+		city: 'Novorossiysk',
+		med: 'Profimed',
+		adress: '211, Dzerzhinskogo ave.',
+	},
+	{
+		n: '8',
+		city: 'Kaliningrad',
+		med: 'N.I.Pirogov Center',
+		adress: '34-36-38-38a, Bolnichnaya str.',
+	},
+	{
+		n: '9',
+		city: 'Taganrog',
+		med: 'Southern District Hospital',
+		adress: '6, Garibaldi str.',
+	},
+	{
+		n: '10',
+		city: 'Samara',
+		med: 'Clinic Center',
+		adress: '28, Pionerskaya str.',
+	},
+	{
+		n: '11',
+		city: 'Vladivostok',
+		med: 'Far Eastern',
+		adress: '92, Okeanskiy ave.',
+	},
+	{
+		n: '12',
+		city: 'Vladivostok',
+		med: 'Nevelskoy  Maritime State University',
+		adress: '60A, Stanyukovicha str.',
+	},
+	{
+		n: '13',
+		city: 'Vladivostok',
+		med: 'Port Hospital of Water Transport',
+		adress: '3, Beregovaya str.',
+	},
+	{
+		n: '14',
+		city: 'Nakhodka',
+		med: 'PRISCO',
+		adress: '4. Shkolniy str.',
+	},
+	{
+		n: '15',
+		city: 'Nakhodka',
+		med: 'City Hospital',
+		adress: '34, Pirogova str.',
+	},
+	{
+		n: '16',
+		city: 'Nakhodka',
+		med: 'Port Hospital of Water Transport',
+		adress: '16, Pavlova str.',
+	},
+	{
+		n: '17',
+		city: 'Odessa',
+		med: 'Academmarine',
+		adress: '10, Malovskogo str.',
+	},
+	{
+		n: '18',
+		city: 'Odessa',
+		med: 'National Medical University/LIDER MARINE',
+		adress: '8, Tenysta str.',
+	},
+	{
+		n: '19',
+		city: 'Mariupol',
+		med: 'Marmed',
+		adress: '6, Gagarina str.',
+	},
+	{
+		n: '20',
+		city: 'Mariupol',
+		med: 'Primary Health Care Center №4',
+		adress: '35, Nakhimov Ave.',
+	},
+	{
+		n: '21',
+		city: 'Kherson',
+		med: 'Medical exams center',
+		adress: '179-a, 40 Rokiv Zhovtnya str. ',
+	},
+	{
+		n: '22',
+		city: 'Izmail',
+		med: 'Danube Basin Hospital ',
+		adress: '182-1, Zheleznyakova str./ 11A, Portovaya str.',
+	},
+	{
+		n: '23',
+		city: 'Sevastopol',
+		med: 'Medcompany (Green Wave)',
+		adress: '13, V.Kuchera str.',
+	},
+	{
+		n: '24',
+		city: 'Sevastopol',
+		med: 'Merchant Seaport',
+		adress: '5, Nakhimova sq.',
+	},
+	{
+		n: '25',
+		city: 'Sevastopol',
+		med: 'Medicalport',
+		adress: '5A, Rybakov str., office 320',
+	},
+	{
+		n: '26',
+		city: 'Kerch',
+		med: 'Port Hospital of Water Transport',
+		adress: '47A, 1st Mitridatskaya str.',
+	},
+	];
+
 export const listSamosResponsibilities = [
 	{
 		rank: 'Master',

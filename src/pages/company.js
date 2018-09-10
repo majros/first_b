@@ -17,25 +17,47 @@ class Company extends React.Component {
 		const {classes} = this.props;
 
 		return <React.Fragment>
-			<Typography className={classes.typography} variant={'headline'}>
+			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				<FormattedMessage id="company.headline"/>
 			</Typography>
-			<SingleLineImgList/>
-			<Typography className={classes.typography} align={'justify'}>
+			<Typography className={classes.typography}>
 				<FormattedMessage id="company.text1"/>
 			</Typography>
-			<Typography className={classes.typography} variant={'title'}>
+			<SingleLineImgList/>
+			<Typography className={classes.typography}>
 				<FormattedMessage id="company.text2"/>
 			</Typography>
-			<Typography className={classes.typography}>
-				<li><FormattedMessage id="company.li1"/></li>
-				<li><FormattedMessage id="company.li2"/></li>
-				<li><FormattedMessage id="company.li3"/></li>
-			</Typography>
+			<LineGridCertification/>
 			<Typography className={classes.typography}>
 				<FormattedMessage id="company.text3"/>
 			</Typography>
-			<LineGridCertification/>
+			<Typography className={classes.typography} variant="title">
+				<FormattedMessage id="company.subhead1"/>
+			</Typography>
+			<Typography className={classes.typography}>
+				<li><FormattedMessage id="company.li1_1"/></li>
+				<li><FormattedMessage id="company.li1_2"/></li>
+				<li><FormattedMessage id="company.li1_3"/></li>
+			</Typography>
+			<Typography className={classes.typography}>
+				<FormattedMessage id="company.text4"/>
+			</Typography>
+			<Typography className={classes.typography} variant="title">
+				<FormattedMessage id="company.subhead2"/>
+			</Typography>
+			<Typography className={classes.typography}>
+				<li><FormattedMessage id="company.li2_1"/></li>
+				<li><FormattedMessage id="company.li2_2"/></li>
+				<li><FormattedMessage id="company.li2_3"/></li>
+				<li><FormattedMessage id="company.li2_4"/></li>
+				<li><FormattedMessage id="company.li2_5"/></li>
+			</Typography>
+			<Typography className={classes.typography}>
+				<FormattedMessage id="company.text5"/>
+			</Typography>
+			<Typography className={classes.typography}>
+				<FormattedMessage id="company.text6"/>
+			</Typography>
 		</React.Fragment>;
 	}
 }

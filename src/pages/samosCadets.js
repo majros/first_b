@@ -16,7 +16,7 @@ class samosCadets extends React.Component {
 
 		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
-				SAMOS Cadets program of Ukrainian Nationality
+				<FormattedMessage id="samosCadets.headline"/>
 			</Typography>
 			<Typography className={classes.typography} variant={'body1'}>
 				<FormattedMessage id="samosCadets.samosContent1"/>

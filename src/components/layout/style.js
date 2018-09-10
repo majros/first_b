@@ -37,7 +37,7 @@ export const styles = theme => ({
 		display: 'none',
 	},
 	drawerPaper: {
-		height: 'calc(100vh - 48px)',
+		height: 'calc(100vh - 50px)',
 		position: 'relative',
 		width: drawerWidth,
 	},

@@ -2,9 +2,20 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import {withStyles} from '@material-ui/core/styles';
-import samosSeamenCertification from '../components/img/samosSeamenCertification.jpg'
+import Button from '@material-ui/core/Button';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import { listOfPromotion } from '../components/listOfPromotion'
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import samosSeamenCertification from '../components/img/samosSeamenCertification.jpg'
 import arrowIcon from '../components/img/arrowIcon.png'
+import {listSamosMedical} from "../components/listSamosResponsibilities";
 
 const styles = theme => ({
 	typography: {
@@ -14,6 +25,9 @@ const styles = theme => ({
 	typography2: {
 		align: 'justify',
 		padding: theme.spacing.unit * 4,
+	},
+	button: {
+		margin: theme.spacing.unit,
 	},
 });
 
@@ -25,6 +39,65 @@ class samosCertification extends React.Component {
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
 				SAMOS Seamen Certification
 			</Typography>
+			<Typography className={classes.typography} variant={'title'}>
+				Medical requirement
+			</Typography>
+			<ExpansionPanel defaultExpanded={false}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.heading} variant={'subheading'}>
+						List of PEME Medical centers approved by Samos Steamship Co:
+					</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<Table className={classes.table}>
+						<TableHead>
+							<TableRow>
+								<TableCell numeric padding={'checkbox'}>№</TableCell>
+								<TableCell padding={'dense'}>City</TableCell>
+								<TableCell padding={'dense'}>Medical Center</TableCell>
+								<TableCell padding={'dense'}>Adress</TableCell>
+							</TableRow>
+						</TableHead>
+						<TableBody>
+							{listSamosMedical.map(n => {
+								return (
+									<TableRow key={n.n}>
+										<TableCell component="th" scope="row" numeric padding={'checkbox'}>
+											{n.n}
+										</TableCell>
+										<TableCell padding={'dense'}>{n.city}</TableCell>
+										<TableCell padding={'dense'}>{n.med}</TableCell>
+										<TableCell padding={'dense'}>{n.adress}</TableCell>
+									</TableRow>
+								);
+							})}
+						</TableBody>
+					</Table>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
+			<ExpansionPanel defaultExpanded={false}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.heading} variant={'subheading'}>
+						Download enclosed application form to medical center and fill it:
+					</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<Button target='_blank'
+					        variant="contained"
+					        color="secondary"
+					        className={classes.button}
+					        href={"https://drive.google.com/open?id=1Qv8qYKhGJODRfr7hvsATt2vViKLKFkPoqXs4vq90IY4"}>
+						DRUG/ALCOHOL TEST REPORT
+					</Button>
+					<Button target='_blank'
+					        variant="contained"
+					        color="secondary"
+					        className={classes.button}
+					        href={"https://drive.google.com/open?id=1duhKFgeoLqZ8wJBxtfhLI2pXIDXjlEeW"}>
+						PEME declaration bilingual
+					</Button>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
 			<Typography className={classes.typography} variant={'title'}>
 				Seamen shall carry the following documents at all times:
 			</Typography>

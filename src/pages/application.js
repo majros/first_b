@@ -2,6 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import {withStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import {FormattedMessage} from 'react-intl';
 
 const styles = theme => ({
 	typography: {
@@ -18,8 +19,11 @@ class Application extends React.Component {
 		const {classes} = this.props;
 
 		return <React.Fragment>
-			<Typography className={classes.typography} variant={'headline'}>
-				Download enclosed application form, fill it and send it to info@bark.com.ua
+			<Typography className={classes.typography} variant={'headline'} align={'center'}>
+				<FormattedMessage id="application.headline"/>
+			</Typography>
+			<Typography className={classes.typography}>
+				<FormattedMessage id="application.textItem1"/>
 			</Typography>
 			<Button target='_blank'
 			        variant="contained"

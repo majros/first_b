@@ -11,6 +11,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {FormattedMessage} from 'react-intl';
 import {listOfVacanciesSamos, listOfVacanciesNomikos, listOfVacanciesOffen} from '../components/listOfVacancies'
 
 const styles = theme => ({
@@ -38,7 +39,7 @@ class Vacancies extends React.Component {
 
 		return <React.Fragment>
 			<Typography className={classes.typography} variant={'headline'} align={'center'}>
-				Актуальные вакансии на июль 2018 года
+				<FormattedMessage id="vacancies.line1"/>
 			</Typography>
 			<Paper className={classes.root}>
 				<ExpansionPanel defaultExpanded={true}>

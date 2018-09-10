@@ -22,10 +22,11 @@ const styles = theme => ({
 
 function SingleLineImgList(props) {
 	const { classes } = props;
+	const colsNm =  (window.innerWidth < 700) ? 1.5 : 3.5;
 
 	return (
 		<div className={classes.root}>
-			<GridList className={classes.gridList} cols={2.5}>
+			<GridList className={classes.gridList} cols={colsNm}>
 				{listOfImages.map(tile => (
 					<GridListTile key={tile.img}>
 						<img src={tile.img} alt={tile.title} style={{height:'180px'}}/>
