@@ -14,8 +14,8 @@ export default class Footer extends React.PureComponent {
 	render() {
 		return <Grid container style={stylesFoot} justify={'space-around'}>
 			<Grid item xs={3}>
-				<Typography align={'left'} variant={'button'} noWrap>Bark Agency / Морское агенство Барк</Typography>
-				<Typography align={'left'} variant={'caption'} noWrap>Crewing manning / Набор экипажа</Typography>
+				<Typography align={'left'} variant={'button'} noWrap>Bark Agency / Барк</Typography>
+				<Typography align={'left'} variant={'caption'} noWrap>Crewing manning / Рекрутинговое агенство</Typography>
 				<Typography align={'left'} variant={'caption'} noWrap>© 1992 – 2018 г.</Typography>
 			</Grid>
 			<Grid item xs={3}>
