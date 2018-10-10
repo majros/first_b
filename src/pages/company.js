@@ -28,9 +28,6 @@ class Company extends React.Component {
 				<FormattedMessage id="company.text2"/>
 			</Typography>
 			<LineGridCertification/>
-			<Typography className={classes.typography}>
-				<FormattedMessage id="company.text3"/>
-			</Typography>
 			<Typography className={classes.typography} variant="title">
 				<FormattedMessage id="company.subhead1"/>
 			</Typography>

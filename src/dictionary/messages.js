@@ -15,38 +15,33 @@ export const messages = {
 			textItem1: 'Download enclosed application form, fill it and send it to info@bark.com.ua',
 		},
 		company: {
-			headline: 'Морское агентство БАРК - посредник в трудоустройстве моряков на суда иностранных судовладельцев.',
-			text1: 'Компания БАРК занимается наймом и трудоустройством моряков на территории Украины с 1992 г. и на ' +
-			'сегодняшний момент имеет огромный опыт и высокий уровень профессионализма для осуществления подбора, обучения' +
-			' и комплектования экипажей грузовых судов.',
-			text2: 'Наша система качества удовлетворяет требованиям международного стандарта качества ISO 9001: 2015 и ' +
-			'Конвенции о труде в морском судоходстве 2006 (MLC 2006). Компания «БАРК» должным образом сертифицирована ' +
-			'Российским морским регистром судоходства, копии сертификатов - ISO 9001:2015 и Свидетельства о соответствия ' +
-			'требованиям MLC:',
-			text3: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных' +
-			' квалифицированных морских специалистов всех рангов:',
-			subhead1: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных ' +
-			'квалифицированных морских специалистов всех рангов:',
-			li1_1: 'с опытом работы на различных типах судов: балкерах, контейнерах, танкерах.',
-			li1_2: 'хорошим уровнем знания английского языка',
-			li1_3: 'необходимыми документами в соответствии с рангами и требованиями STCW 78/95',
-			text4: 'Понимая важность оказания качественных услуг судовладельцам, наша компания акцентирует внимание ' +
-			'именно на качестве отбора специалистов, рассматривая его, как центральный элемент в образовании и укреплении' +
-			' наших позиций на рынке кадровых услуг.',
-			subhead2: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных ' +
-			'квалифицированных морских специалистов всех рангов:',
-			li2_1: 'проводим личное собеседование;',
-			li2_2: 'тестируем квалификацию моряков в своей области (с использованием тестовой программы CES, ' +
-			'разработанной Seagull, Norway);',
-			li2_3: 'тестируем профессиональные знания английского языка (проводимые английским инспектором и ' +
-			'компьютерным тестом MARLINS);',
-			li2_4: 'проверяем подлинность документов каждого моряка (в Министерстве транспорта Украины)',
-			li2_5: 'уделяем внимание анализу всех возможных рисков при найме экипажей',
-			text5: 'Высококвалифицированный и компетентный персонал нашей компании прилагает все усилия для достижения ' +
-			'успеха и удовлетворения всех требований и пожеланий судовладельца.',
-			text6: 'Обладая достаточно широкими связями и возможностями, равно как и огромным потенциалом, мы стремимся ' +
-			'выполнять свою работу качественно, эффективно, с максимальной продуктивностью и всегда готовы к плодотворному ' +
-			'сотрудничеству с целью обоюдного успеха и процветания.',
+			headline: 'Bark Manning Agency is a recruiting agent of Ukrainian seafarers for employment aboard vessels of foreign Shipowners.',
+			text1: 'Since created in 1992 we have gained a proper experience, good reputation and formed a professional ' +
+			'staff team capable to select qualified crew to meet the expectations and specific requirements of our ' +
+			'Principals for our mutual benefit.',
+			text2: 'Our quality system fully complies with the requirements of International Standard - ISO 9001:2015 ' +
+			'and Maritime Labour Convention (MLC 2006). Bark is a licensed private company certified according to ' +
+			'International Standard ISO 9001: 2015 and as per requirements of Maritime Labour Convention (MLC 2006) by ' +
+			'Russian Maritime Register of Shipping.',
+			subhead1: 'Our agency accumulated the database of about 10.000 qualified seafarers of various ranks updated ' +
+			'on a daily basis:',
+			li1_1: 'Our stable pool is mostly experienced on container carriers, bulk carriers and tankers',
+			li1_2: 'Good level of English',
+			li1_3: 'All are properly trained and certified as per  STCW 78/95 requirements',
+			text4: 'Our goal is to provide the best quality of our services both to seafarers and to our Principals ' +
+			'to prove our good position on Ukrainian Maritime Labor Market. We are focused not upon selection only ' +
+			'but on assisting our seamen to adopt and correspond to different requirements of Shipowners.',
+			subhead2: 'While the process of crew selection we do the following:',
+			li2_1: 'We conduct a personal interview;\n',
+			li2_2: 'We test the qualifications of seafarers in their field (using the CES test program developed by Seagull, Norway);',
+			li2_3: 'We test professional knowledge of the English language (conducted by the English inspector and the ' +
+			'computer test MARLINS);',
+			li2_4: 'we check the authenticity of each seaman\'s documents (in the Ministry of Transport of Ukraine)',
+			li2_5: 'pay attention to the analysis of all possible risks when hiring crews',
+			text5: 'Stable Long Term  and fruitful cooperation with our Principals based on mutual trust and transparency ' +
+			'is a matter of our proud. The highest retention rates of our pool proves it as well.',
+			text6: 'Any clients and Seafarers are welcomed to contact us to start cooperation for the sake of mutual ' +
+			'success and prosperity.',
 		},
 		partners: {
 			title: 'Our partners',
@@ -112,8 +107,6 @@ export const messages = {
 			'Конвенции о труде в морском судоходстве 2006 (MLC 2006). Компания «БАРК» должным образом сертифицирована ' +
 			'Российским морским регистром судоходства, копии сертификатов - ISO 9001:2015 и Свидетельства о соответствия ' +
 			'требованиям MLC:',
-			text3: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных' +
-			' квалифицированных морских специалистов всех рангов:',
 			subhead1: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных ' +
 			'квалифицированных морских специалистов всех рангов:',
 			li1_1: 'с опытом работы на различных типах судов: балкерах, контейнерах, танкерах.',
@@ -122,8 +115,7 @@ export const messages = {
 			text4: 'Понимая важность оказания качественных услуг судовладельцам, наша компания акцентирует внимание ' +
 			'именно на качестве отбора специалистов, рассматривая его, как центральный элемент в образовании и укреплении' +
 			' наших позиций на рынке кадровых услуг.',
-			subhead2: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных ' +
-			'квалифицированных морских специалистов всех рангов:',
+			subhead2: 'В процессе отбора экипажей мы делаем следующее:',
 			li2_1: 'проводим личное собеседование;',
 			li2_2: 'тестируем квалификацию моряков в своей области (с использованием тестовой программы CES, ' +
 			'разработанной Seagull, Norway);',

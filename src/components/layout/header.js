@@ -1,7 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import {withStyles} from '@material-ui/core/styles'
 import IconButton from '@material-ui/core/IconButton'
 import logo from '../img/logo white2.gif';
 import LocaleRU from '../img/ru.png';
@@ -22,7 +21,7 @@ const styles = ({
 	},
 });
 
-class Header extends React.PureComponent {
+class Header extends React.Component {
 	state = {
 		anchorEl: null,
 		lngEl: LocaleRU,
@@ -52,14 +51,13 @@ class Header extends React.PureComponent {
 	};
 
 	render() {
-		const {classes} = this.props;
 		const {anchorEl} = this.state;
 		const open = Boolean(anchorEl);
 		let {lngEl} = this.state;
 
 		return (
-			<div className={classes.header}>
-				<img className={classes.logo} alt='icon' src={logo}/>
+			<div style={styles.header}>
+				<img style={styles.logo} alt='icon' src={logo}/>
 				<IconButton
 					aria-owns={open ? 'menu-appbar' : null}
 					aria-haspopup="true"
@@ -99,6 +97,4 @@ const mapDispatchToProps = (dispatch) => ({
 	changeLocale: bindActionCreators(changeLocale, dispatch),
 });
 
-Header = withStyles(styles, {withTheme: true})(Header);
-
-export default connect(() => {}, mapDispatchToProps)(Header);
+export default connect(mapDispatchToProps)(Header);
