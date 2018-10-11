@@ -97,4 +97,4 @@ const mapDispatchToProps = (dispatch) => ({
 	changeLocale: bindActionCreators(changeLocale, dispatch),
 });
 
-export default connect(mapDispatchToProps)(Header);
+export default connect(() => ({}), mapDispatchToProps)(Header);
