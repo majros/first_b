@@ -22,7 +22,6 @@ class offenCertification extends React.Component {
 			</Typography>
 			<Typography className={classes.typography} variant={'body1'} >
 				The general crew consistency onboard company's vessels should be explained:<br/>
-				<br/>
 				Senior Officers:
 				<li>Filipino, German, Polish, Romanian, Russian & Ukrainian</li>
 				Junior Officers:

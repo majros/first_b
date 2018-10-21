@@ -36,8 +36,8 @@ export const messages = {
 			li2_2: 'We test the qualifications of seafarers in their field (using the CES test program developed by Seagull, Norway);',
 			li2_3: 'We test professional knowledge of the English language (conducted by the English inspector and the ' +
 			'computer test MARLINS);',
-			li2_4: 'we check the authenticity of each seaman\'s documents (in the Ministry of Transport of Ukraine)',
-			li2_5: 'pay attention to the analysis of all possible risks when hiring crews',
+			li2_4: 'we check the authenticity of each seaman\'s documents (in the Ministry of Transport of Ukraine);',
+			li2_5: 'pay attention to the analysis of all possible risks when hiring crews;',
 			text5: 'Stable Long Term  and fruitful cooperation with our Principals based on mutual trust and transparency ' +
 			'is a matter of our proud. The highest retention rates of our pool proves it as well.',
 			text6: 'Any clients and Seafarers are welcomed to contact us to start cooperation for the sake of mutual ' +
@@ -109,7 +109,7 @@ export const messages = {
 			'требованиям MLC:',
 			subhead1: 'Наше крюинговое агентство владеет проверенной и постоянно обновляемой базой прекрасно обученных ' +
 			'квалифицированных морских специалистов всех рангов:',
-			li1_1: 'с опытом работы на различных типах судов: балкерах, контейнерах, танкерах.',
+			li1_1: 'с опытом работы на различных типах судов: балкерах, контейнерах, танкерах',
 			li1_2: 'хорошим уровнем знания английского языка',
 			li1_3: 'необходимыми документами в соответствии с рангами и требованиями STCW 78/95',
 			text4: 'Понимая важность оказания качественных услуг судовладельцам, наша компания акцентирует внимание ' +
@@ -121,8 +121,8 @@ export const messages = {
 			'разработанной Seagull, Norway);',
 			li2_3: 'тестируем профессиональные знания английского языка (проводимые английским инспектором и ' +
 			'компьютерным тестом MARLINS);',
-			li2_4: 'проверяем подлинность документов каждого моряка (в Министерстве транспорта Украины)',
-			li2_5: 'уделяем внимание анализу всех возможных рисков при найме экипажей',
+			li2_4: 'проверяем подлинность документов каждого моряка (в Министерстве транспорта Украины);',
+			li2_5: 'уделяем внимание анализу всех возможных рисков при найме экипажей;',
 			text5: 'Высококвалифицированный и компетентный персонал нашей компании прилагает все усилия для достижения ' +
 			'успеха и удовлетворения всех требований и пожеланий судовладельца.',
 			text6: 'Обладая достаточно широкими связями и возможностями, равно как и огромным потенциалом, мы стремимся ' +
