@@ -58,13 +58,13 @@ class LocaleDrawer extends React.PureComponent {
 				<Collapse in={this.state.open} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding dense={true}>
 					<Divider />
-						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/nomikos'}>
-							<ListItemIcon>
-								<StarBorder />
-							</ListItemIcon>
-							<ListItemText inset primary="NOMIKOS" />
-						</ListItem>
-					<Divider inset />
+						{/*<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/nomikos'}>*/}
+							{/*<ListItemIcon>*/}
+								{/*<StarBorder />*/}
+							{/*</ListItemIcon>*/}
+							{/*<ListItemText inset primary="NOMIKOS" />*/}
+						{/*</ListItem>*/}
+						{/*<Divider inset />*/}
 						<ListItem button style={{paddingLeft: '40px'}} component={Link} to={'/offen'}>
 							<ListItemIcon>
 								<StarBorder />

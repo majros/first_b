@@ -7,8 +7,8 @@ import samos2 from './img/LONDON_SPIRIT.jpg';
 export const listOfImages = [
 	{
         img: nokios1,
-        title: 'SHIP_NAME',
-        author: 'COMPANY: SHIP_TYPE',
+        title: 'NM Cherry Blossom',
+        author: 'NOMIKOS: cargo',
     },
 	{
         img: offen1,

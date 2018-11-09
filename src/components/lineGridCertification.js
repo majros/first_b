@@ -47,7 +47,7 @@ class LineGridCertification extends React.PureComponent {
 					))}
 				</GridList>
 				<Dialog open={this.state.open}  onClose={this.handleClose} aria-labelledby="simple-dialog-title" >
-					<img style={{height:'85vh', width:'100%'}}
+					<img style={{height:'85vh'}}
 					     onClick={() => this.handleClose()}
 					     src={this.state.selectedValue} alt='icon'
 					/>
